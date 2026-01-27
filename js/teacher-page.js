@@ -1,0 +1,133 @@
+/**
+ * teacher-page.js
+ * Handles dynamic content loading for the teacher detail page.
+ */
+
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('Teacher page DOM loaded');
+    initTeacherPage();
+
+    // Re-render when language changes
+    document.addEventListener('languageChanged', (e) => {
+        const lang = e.detail;
+        console.log('Language changed:', lang);
+        const urlParams = new URLSearchParams(window.location.search);
+        const teacherId = urlParams.get('id');
+        if (teacherId) {
+            renderTeacherData(teacherId, lang);
+            updateTeacherSEO(teacherId, lang);
+        }
+    });
+});
+
+function initTeacherPage() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const teacherId = urlParams.get('id');
+    console.log('Teacher ID:', teacherId);
+
+    if (!teacherId || (!window.teachersDetailData?.[teacherId] && !window.teachersData?.[teacherId])) {
+        console.error('Teacher not found:', teacherId);
+        // window.location.href = 'index.html#teachers';
+        return;
+    }
+
+    const lang = typeof currentLanguage !== 'undefined' ? currentLanguage : 'en';
+    console.log('Rendering for language:', lang);
+    renderTeacherData(teacherId, lang);
+    updateTeacherSEO(teacherId, lang);
+}
+
+function renderTeacherData(id, lang) {
+    const detail = window.teachersDetailData?.[id]?.[lang] || window.teachersDetailData?.[id]?.['en'];
+    const basic = window.teachersData?.[id];
+
+    console.log('Detail data:', detail);
+    console.log('Basic data:', basic);
+
+    if (!detail && !basic) return;
+
+    const name = detail?.name || basic?.name || 'Teacher';
+    const role = detail?.role || basic?.title || '';
+    const quote = detail?.quote || '';
+    const bio = detail?.bio || basic?.description || '';
+    const philosophy = detail?.philosophy || '';
+    const highlights = detail?.highlights || [];
+    const image = basic?.image || 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b';
+    const socials = basic?.socials || {};
+
+    // Update DOM
+    const nameEl = document.getElementById('teacher-name');
+    if (nameEl) nameEl.textContent = name;
+
+    const roleEl = document.getElementById('teacher-role');
+    if (roleEl) roleEl.textContent = role;
+
+    const quoteEl = document.getElementById('teacher-quote');
+    if (quoteEl) quoteEl.textContent = quote ? `"${quote}"` : '';
+
+    const imageEl = document.getElementById('teacher-image');
+    if (imageEl) {
+        imageEl.src = image;
+        imageEl.alt = name;
+    }
+
+    const bioEl = document.getElementById('teacher-bio');
+    if (bioEl) {
+        // Split bio by newlines if it's a string with line breaks, otherwise wrap in p
+        bioEl.innerHTML = bio.split('\n').map(p => `<p>${p}</p>`).join('');
+    }
+
+    const philosophyEl = document.getElementById('teacher-philosophy');
+    if (philosophyEl) philosophyEl.textContent = philosophy;
+
+    const highlightsEl = document.getElementById('teacher-highlights');
+    if (highlightsEl) {
+        highlightsEl.innerHTML = highlights.map(h => `
+            <li class="flex items-start">
+                <i data-lucide="check-circle" class="h-5 w-5 text-gray-800 mr-3 mt-0.5"></i>
+                <span class="text-gray-600">${h}</span>
+            </li>
+        `).join('');
+        if (window.lucide) window.lucide.createIcons();
+    }
+
+    // Update Socials (if elements exist)
+    // For now we use the placeholders in teacher.html, but we could update them dynamically
+}
+
+function updateTeacherSEO(id, lang) {
+    if (typeof seoData === 'undefined' || !seoData.meta.teachers) return;
+
+    const detail = teachersDetailData[id] ? (teachersDetailData[id][lang] || teachersDetailData[id]['en']) : null;
+    const basic = teachersData[id];
+
+    const name = detail ? detail.name : (basic ? basic.name : 'Teacher');
+    const role = detail ? detail.role : (basic ? basic.title : '');
+
+    const t = seoData.meta.teachers[lang] || seoData.meta.teachers['en'];
+
+    const title = t.title.replace('{name}', name);
+    const description = t.description.replace('{name}', name);
+    const keywords = t.keywords.replace('{name}', name).replace('{role}', role);
+
+    document.title = title;
+
+    const titleEl = document.getElementById('seo-title');
+    if (titleEl) titleEl.textContent = title;
+
+    const descEl = document.getElementById('seo-description');
+    if (descEl) descEl.setAttribute('content', description);
+
+    const keyEl = document.getElementById('seo-keywords');
+    if (keyEl) keyEl.setAttribute('content', keywords);
+
+    // OG Tags
+    const ogTitle = document.getElementById('og-title');
+    if (ogTitle) ogTitle.setAttribute('content', title);
+
+    const ogDesc = document.getElementById('og-description');
+    if (ogDesc) ogDesc.setAttribute('content', description);
+
+    const ogImg = document.getElementById('og-image');
+    if (ogImg && basic) ogImg.setAttribute('content', basic.image);
+}

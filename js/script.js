@@ -1,0 +1,429 @@
+// Main Logic (Non-Module)
+let currentLanguage = 'en';
+
+// --- Initialization ---
+document.addEventListener('DOMContentLoaded', () => {
+    initLanguage();
+    initModals();
+    initReviewsCarousel();
+    initInstagramCarousel();
+    initForms();
+    initNavbar();
+    initMobileMenu();
+    initSmoothScroll();
+    initFadeIn();
+    initCountdown();
+    initLikeButtons();
+    initSEO(); // Aggressive SEO Init
+
+    // Initialize Lucide Icons
+    if (window.lucide) window.lucide.createIcons();
+});
+
+// --- Internationalization (i18n) ---
+function initLanguage() {
+    const savedLanguage = localStorage.getItem('preferredLanguage');
+    const browserLanguage = navigator.language.substring(0, 2);
+
+    let langToLoad = 'en';
+    if (savedLanguage && ['en', 'et', 'fi'].includes(savedLanguage)) {
+        langToLoad = savedLanguage;
+    } else if (['en', 'et', 'fi'].includes(browserLanguage)) {
+        langToLoad = browserLanguage;
+    }
+    setLanguage(langToLoad);
+}
+
+function setLanguage(lang) {
+    if (!['en', 'et', 'fi'].includes(lang)) return;
+    currentLanguage = lang;
+    updateUI(lang);
+    localStorage.setItem('preferredLanguage', lang);
+}
+
+function updateUI(lang) {
+    const flagMap = { 'en': 'https://flagcdn.com/w20/gb.png', 'et': 'https://flagcdn.com/w20/ee.png', 'fi': 'https://flagcdn.com/w20/fi.png' };
+    const languageCodeMap = { 'en': 'EN', 'et': 'EE', 'fi': 'FI' };
+
+    // Update switchers
+    const currentFlag = document.getElementById('current-flag');
+    if (currentFlag) currentFlag.src = flagMap[lang];
+    const currentLangText = document.getElementById('current-language');
+    if (currentLangText) currentLangText.textContent = languageCodeMap[lang];
+    const mobFlag = document.getElementById('mobile-current-flag');
+    if (mobFlag) mobFlag.src = flagMap[lang];
+    const mobLangText = document.getElementById('mobile-current-language');
+    if (mobLangText) mobLangText.textContent = languageCodeMap[lang];
+
+    // Update Text from Global translationsData
+    const t = translationsData[lang] || translationsData['en'];
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (t[key]) {
+            if (element.tagName === 'INPUT' && element.hasAttribute('placeholder')) {
+                element.setAttribute('placeholder', t[key]);
+            } else {
+                element.innerHTML = t[key];
+            }
+        }
+    });
+
+    updateSEO(lang); // Update Meta Tags
+
+    // Dropdowns active state
+    document.querySelectorAll('.language-option, .language-option-mobile').forEach(option => {
+        if (option.getAttribute('data-lang') === lang) option.classList.add('active');
+        else option.classList.remove('active');
+    });
+
+    // Close menus
+    document.getElementById('language-dropdown')?.classList.remove('active');
+    document.getElementById('mobile-language-dropdown')?.classList.remove('active');
+
+    // Notify other scripts that language has changed
+    document.dispatchEvent(new CustomEvent('languageChanged', { detail: lang }));
+}
+
+// Logic for Language Switcher Buttons
+const langToggle = document.getElementById('language-toggle');
+if (langToggle) langToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    document.getElementById('language-dropdown').classList.toggle('active');
+});
+
+const mobLangToggle = document.getElementById('mobile-language-toggle');
+if (mobLangToggle) mobLangToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    document.getElementById('mobile-language-dropdown').classList.toggle('active');
+});
+
+document.addEventListener('click', () => {
+    document.getElementById('language-dropdown')?.classList.remove('active');
+    document.getElementById('mobile-language-dropdown')?.classList.remove('active');
+});
+
+document.querySelectorAll('.language-option, .language-option-mobile').forEach(option => {
+    option.addEventListener('click', () => setLanguage(option.getAttribute('data-lang')));
+});
+
+
+// --- Modals ---
+function initModals() {
+    // Inject Modals HTML
+    const modalContainer = document.createElement('div');
+    modalContainer.innerHTML = `
+        <!-- Booking Confirmation Modal -->
+        <div id="booking-modal" class="modal-overlay fixed inset-0 z-[70] flex items-center justify-center bg-black/60 p-4 opacity-0 pointer-events-none">
+            <div class="modal-content bg-white rounded-2xl shadow-xl w-full max-w-md mx-auto transform scale-95 opacity-0 text-center p-8">
+                <i data-lucide="check-circle" class="h-16 w-16 text-green-500 mx-auto mb-4"></i>
+                <h2 class="text-2xl font-serif text-gray-800 mb-2">Booking Successful!</h2>
+                <p id="booking-confirmation-text" class="text-gray-600 mb-6"></p>
+                <button id="booking-modal-close" class="w-full py-3 text-center rounded-md font-medium transition-colors bg-gray-800 text-white hover:bg-gray-700">Close</button>
+            </div>
+        </div>
+        <!-- Teacher Modal -->
+        <div id="teacher-modal" class="modal-overlay fixed inset-0 z-[60] flex items-center justify-center bg-black/60 p-4 opacity-0 pointer-events-none">
+            <div class="modal-content bg-white rounded-2xl shadow-xl w-full max-w-md mx-auto transform scale-95 opacity-0 overflow-hidden">
+                <div class="relative"><img id="teacher-modal-img" src="" class="w-full h-56 object-cover"><button id="teacher-modal-close" class="absolute top-4 right-4 text-white bg-black/30 rounded-full p-1.5 hover:bg-black/50"><i data-lucide="x" class="h-5 w-5"></i></button></div>
+                <div class="p-6"><h2 id="teacher-modal-name" class="text-3xl font-serif text-gray-800"></h2><p id="teacher-modal-title" class="text-pink-500 mb-4"></p><p id="teacher-modal-bio" class="text-gray-700 mb-6"></p><div id="teacher-modal-socials" class="flex space-x-4"></div></div>
+            </div>
+        </div>
+        <!-- Pricing Modal -->
+        <div id="pricing-modal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 opacity-0 pointer-events-none">
+            <div class="modal-content bg-white rounded-2xl shadow-xl w-full max-w-lg mx-auto transform scale-95 opacity-0 overflow-hidden">
+                <div class="p-6 md:p-8"><div class="flex justify-between items-center mb-6"><h2 id="pricing-modal-title" class="text-3xl font-serif text-gray-800"></h2><button id="pricing-modal-close" class="text-gray-500 hover:text-gray-800"><i data-lucide="x" class="h-6 w-6"></i></button></div><div id="pricing-modal-body" class="space-y-4 max-h-[60vh] overflow-y-auto"></div></div>
+            </div>
+        </div>
+        <!-- Event/Other Modals -->
+         <div id="event-modal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 opacity-0 pointer-events-none">
+             <div class="modal-content bg-white rounded-2xl shadow-xl w-full max-w-lg mx-auto transform scale-95 opacity-0 overflow-hidden">
+                <div class="relative"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b" alt="Retreat" class="w-full h-48 object-cover"><div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div><h2 class="absolute bottom-4 left-6 text-3xl font-serif text-white">Autumn Retreat</h2></div>
+                <div class="p-6 "><p>Details about the event...</p><button id="modal-understand" class="mt-4 px-6 py-2 bg-gray-800 text-white rounded">Close</button></div>
+             </div>
+         </div>
+    `;
+    document.body.appendChild(modalContainer);
+
+    // Dynamic Modal Handlers
+    // Teachers
+    const teacherModal = document.getElementById('teacher-modal');
+    document.querySelectorAll('.teacher-card').forEach(card => {
+        card.addEventListener('click', () => {
+            const data = teachersData[card.dataset.teacherId];
+            if (data) {
+                document.getElementById('teacher-modal-img').src = data.image;
+                document.getElementById('teacher-modal-name').textContent = data.name;
+                document.getElementById('teacher-modal-title').textContent = data.title;
+                document.getElementById('teacher-modal-bio').textContent = data.bio;
+                // Socials...
+                toggleModal('teacher-modal', true);
+            }
+        });
+    });
+    document.getElementById('teacher-modal-close')?.addEventListener('click', () => toggleModal('teacher-modal', false));
+
+    // Pricing
+    document.querySelectorAll('.pricing-button').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const data = pricingData[btn.dataset.pricingGroup];
+            if (data) {
+                document.getElementById('pricing-modal-title').textContent = data.title;
+                const body = document.getElementById('pricing-modal-body');
+                body.innerHTML = '';
+                data.options.forEach(opt => {
+                    body.innerHTML += `<div class="p-4 border rounded flex justify-between"><span class="font-medium">${opt.name}</span><span class="font-bold text-pink-600">${opt.price}</span></div>`;
+                });
+                toggleModal('pricing-modal', true);
+            }
+        });
+    });
+    document.getElementById('pricing-modal-close')?.addEventListener('click', () => toggleModal('pricing-modal', false));
+
+    // Event
+    document.querySelectorAll('.event-details-button').forEach(btn => btn.addEventListener('click', () => toggleModal('event-modal', true)));
+    document.getElementById('modal-understand')?.addEventListener('click', () => toggleModal('event-modal', false));
+}
+
+function toggleModal(id, show) {
+    const el = document.getElementById(id);
+    const content = el.querySelector('.modal-content');
+    if (show) {
+        el.classList.remove('opacity-0', 'pointer-events-none');
+        content.classList.remove('scale-95', 'opacity-0');
+    } else {
+        el.classList.add('opacity-0');
+        content.classList.add('scale-95', 'opacity-0');
+        setTimeout(() => el.classList.add('pointer-events-none'), 300);
+    }
+}
+
+// --- Reviews ---
+// --- Reviews Carousel ---
+let currentReviewIndex = 0;
+
+function initReviewsCarousel() {
+    const track = document.getElementById('reviews-track');
+    const prevBtn = document.getElementById('prev-review');
+    const nextBtn = document.getElementById('next-review');
+    const dotsContainer = document.getElementById('review-dots');
+
+    if (!track || !reviewsData) return;
+
+    // Sort by date (latest first)
+    const sortedReviews = [...reviewsData].sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    // Render Track
+    track.innerHTML = '';
+    sortedReviews.forEach(r => {
+        const card = document.createElement('div');
+        card.className = "review-card flex-shrink-0 w-full md:w-1/2 lg:w-1/3 p-4 flex";
+        card.innerHTML = `
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col w-full transition-all duration-300 hover:shadow-md">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <h4 class="font-bold text-gray-900">${r.name}</h4>
+                        <p class="text-xs text-gray-400 uppercase tracking-widest">${r.timeAgo}</p>
+                    </div>
+                    <div class="flex text-yellow-400">
+                        ${Array(r.stars || 5).fill('<i data-lucide="star" class="h-3 w-3 fill-current"></i>').join('')}
+                    </div>
+                </div>
+                <div class="flex-grow">
+                    <p class="text-gray-600 text-sm leading-relaxed italic">"${r.text || 'No text provided.'}"</p>
+                </div>
+                <div class="mt-4 pt-4 border-t border-gray-50 flex items-center justify-between">
+                    <span class="text-[10px] font-medium text-gray-400 uppercase tracking-tighter flex items-center">
+                        <i data-lucide="info" class="h-3 w-3 mr-1"></i> Verified Google Review
+                    </span>
+                    ${r.badge ? `<span class="text-[10px] bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full font-semibold">${r.badge.text}</span>` : ''}
+                </div>
+            </div>`;
+        track.appendChild(card);
+    });
+
+    if (window.lucide) window.lucide.createIcons();
+
+    // Carousel State
+    const cards = track.querySelectorAll('.review-card');
+    const totalCards = cards.length;
+
+    function getVisibleCount() {
+        if (window.innerWidth >= 1024) return 3;
+        if (window.innerWidth >= 768) return 2;
+        return 1;
+    }
+
+    function updateCarousel() {
+        const visible = getVisibleCount();
+        const maxIndex = Math.max(0, totalCards - visible);
+        if (currentReviewIndex > maxIndex) currentReviewIndex = maxIndex;
+
+        const offset = -(currentReviewIndex * (100 / visible));
+        track.style.transform = `translateX(${offset}%)`;
+
+        // Update Buttons
+        if (prevBtn) prevBtn.style.opacity = currentReviewIndex === 0 ? "0.5" : "1";
+        if (nextBtn) nextBtn.style.opacity = currentReviewIndex >= maxIndex ? "0.5" : "1";
+
+        // Update Dots
+        const dots = dotsContainer.querySelectorAll('.dot');
+        dots.forEach((dot, idx) => {
+            dot.classList.toggle('bg-pink-600', idx === Math.floor(currentReviewIndex / visible));
+            dot.classList.toggle('bg-gray-200', idx !== Math.floor(currentReviewIndex / visible));
+        });
+    }
+
+    // Init Dots
+    if (dotsContainer) {
+        dotsContainer.innerHTML = '';
+        const dotCount = Math.ceil(totalCards / getVisibleCount());
+        for (let i = 0; i < dotCount; i++) {
+            const dot = document.createElement('button');
+            dot.className = `dot h-2 w-2 rounded-full transition-colors ${i === 0 ? 'bg-pink-600' : 'bg-gray-200'}`;
+            dot.addEventListener('click', () => {
+                currentReviewIndex = i * getVisibleCount();
+                updateCarousel();
+            });
+            dotsContainer.appendChild(dot);
+        }
+    }
+
+    // Event Listeners
+    if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+            const visible = getVisibleCount();
+            if (currentReviewIndex < totalCards - visible) {
+                currentReviewIndex++;
+                updateCarousel();
+            }
+        });
+    }
+
+    if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+            if (currentReviewIndex > 0) {
+                currentReviewIndex--;
+                updateCarousel();
+            }
+        });
+    }
+
+    window.addEventListener('resize', updateCarousel);
+    updateCarousel();
+}
+
+// --- Instagram ---
+function initInstagramCarousel() {
+    const track = document.querySelector('.slider-track');
+    if (!track) return;
+    track.innerHTML = '';
+    const all = [...instagramData, ...instagramData];
+    all.forEach(p => {
+        track.innerHTML += `<a href="${p.link}" target="_blank" class="w-[250px] aspect-square mx-2 flex-shrink-0"><img src="${p.img}" class="w-full h-full object-cover rounded-lg"></a>`;
+    });
+}
+
+// --- Other Utils ---
+function initForms() {
+    const cForm = document.getElementById('contact-form');
+    if (cForm) cForm.addEventListener('submit', (e) => { e.preventDefault(); alert("Message sent!"); });
+}
+function initNavbar() {
+    const navbar = document.getElementById('navbar');
+    if (navbar) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                navbar.classList.add('bg-white/80', 'backdrop-blur-md', 'shadow-sm');
+                navbar.classList.remove('bg-transparent');
+            } else {
+                navbar.classList.remove('bg-white/80', 'backdrop-blur-md', 'shadow-sm');
+                navbar.classList.add('bg-transparent');
+            }
+        });
+    }
+}
+function initMobileMenu() {
+    // Basic mobile menu
+    const btn = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    const close = document.getElementById('menu-close');
+    if (btn && menu) btn.addEventListener('click', () => menu.classList.remove('translate-x-full'));
+    if (close && menu) close.addEventListener('click', () => menu.classList.add('translate-x-full'));
+}
+function initSmoothScroll() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+}
+function initFadeIn() {
+    // Force visible immediately
+    document.querySelectorAll('.fade-in-section').forEach(el => {
+        el.classList.add('is-visible');
+        el.style.opacity = 1; // Double force
+    });
+}
+function initCountdown() { /* Placeholder */ }
+function initLikeButtons() { /* Placeholder */ }
+
+// --- Aggressive SEO Logic ---
+function initSEO() {
+    // Inject JSON-LD Schema
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(seoData.schema);
+    document.head.appendChild(script);
+
+    // Initial SEO update
+    updateSEO(currentLanguage);
+}
+
+function updateSEO(lang) {
+    if (typeof seoData === 'undefined') return;
+
+    let data;
+    const path = window.location.pathname;
+
+    if (path.includes('rent.html')) {
+        data = (seoData.meta.rent && seoData.meta.rent[lang]) || (seoData.meta.rent && seoData.meta.rent['en']);
+    } else if (path.includes('faq.html')) {
+        data = (seoData.meta.faq && seoData.meta.faq[lang]) || (seoData.meta.faq && seoData.meta.faq['en']);
+    } else if (path.includes('offers.html')) {
+        data = (seoData.meta.offers && seoData.meta.offers[lang]) || (seoData.meta.offers && seoData.meta.offers['en']);
+    } else {
+        data = seoData.meta[lang] || seoData.meta['en'];
+    }
+
+    if (!data) return;
+
+    // Standard Meta
+    if (data.title) document.title = data.title;
+    const titleEl = document.getElementById('seo-title');
+    if (titleEl) titleEl.textContent = data.title;
+
+    const descEl = document.getElementById('seo-description');
+    if (descEl) descEl.setAttribute('content', data.description);
+
+    const keyEl = document.getElementById('seo-keywords');
+    if (keyEl) keyEl.setAttribute('content', data.keywords);
+
+    // Open Graph
+    const ogTitle = document.getElementById('og-title');
+    if (ogTitle) ogTitle.setAttribute('content', data.ogTitle || data.title);
+
+    const ogDesc = document.getElementById('og-description');
+    if (ogDesc) ogDesc.setAttribute('content', data.ogDescription || data.description);
+
+    const ogImg = document.getElementById('og-image');
+    if (ogImg) ogImg.setAttribute('content', data.ogImage || (seoData.config && seoData.config.defaultImage));
+
+    // Twitter
+    const twTitle = document.getElementById('twitter-title');
+    if (twTitle) twTitle.setAttribute('content', data.ogTitle || data.title);
+
+    const twDesc = document.getElementById('twitter-description');
+    if (twDesc) twDesc.setAttribute('content', data.ogDescription || data.description);
+}

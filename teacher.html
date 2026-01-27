@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="seo-title">Teacher Profile | GoYoga Tallinn</title>
+    <meta name="description" id="seo-description"
+        content="Discover the journey and philosophy of our experienced teachers at GoYoga Tallinn." />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto+Mono&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Data Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/teachers-detail.js"></script>
+    <script src="js/seo-data.js"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navbar (Same as index.html) -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white shadow-sm">
+        <div class="container-custom py-4 md:py-5">
+            <div class="flex items-center justify-between">
+                <a href="index.html#home" class="text-2xl font-serif font-medium tracking-wide">GoYoga</a>
+                <nav class="hidden md:block">
+                    <ul class="flex items-center space-x-8">
+                        <li><a href="index.html#home" class="text-sm font-medium link-underline transition-colors"
+                                data-i18n="nav.home">Home</a></li>
+                        <li><a href="index.html#about" class="text-sm font-medium link-underline transition-colors"
+                                data-i18n="nav.about">About</a></li>
+                        <li><a href="index.html#studio" class="text-sm font-medium link-underline transition-colors"
+                                data-i18n="nav.studio">Studio</a></li>
+                        <li><a href="index.html#schedule" class="text-sm font-medium link-underline transition-colors"
+                                data-i18n="nav.schedule">Schedule</a></li>
+                        <li><a href="index.html#pricing" class="text-sm font-medium link-underline transition-colors"
+                                data-i18n="nav.pricing">Pricing</a></li>
+                        <li><a href="index.html#teachers" class="text-sm font-medium link-underline transition-colors"
+                                data-i18n="nav.teachers">Teachers</a></li>
+                        <li><a href="index.html#events" class="text-sm font-medium link-underline transition-colors"
+                                data-i18n="nav.events">Events</a></li>
+                        <li><a href="index.html#community" class="text-sm font-medium link-underline transition-colors"
+                                data-i18n="nav.community">Community</a></li>
+                        <li><a href="index.html#contact" class="text-sm font-medium link-underline transition-colors"
+                                data-i18n="nav.contact">Contact</a></li>
+
+                        <!-- Language Switcher -->
+                        <li class="language-switcher ml-4">
+                            <button id="language-toggle" class="flex items-center gap-2 text-sm font-medium">
+                                <span class="language-flag-container">
+                                    <img src="https://flagcdn.com/w20/gb.png" alt="English" class="language-flag"
+                                        id="current-flag">
+                                </span>
+                                <span id="current-language">EN</span>
+                                <i data-lucide="chevron-down" class="h-4 w-4"></i>
+                            </button>
+                            <div class="language-dropdown" id="language-dropdown">
+                                <div class="language-option" data-lang="en">
+                                    <img src="https://flagcdn.com/w20/gb.png" alt="English" class="language-flag">
+                                    <span>English</span>
+                                </div>
+                                <div class="language-option" data-lang="et">
+                                    <img src="https://flagcdn.com/w20/ee.png" alt="Eesti" class="language-flag">
+                                    <span>Eesti</span>
+                                </div>
+                                <div class="language-option" data-lang="fi">
+                                    <img src="https://flagcdn.com/w20/fi.png" alt="Suomi" class="language-flag">
+                                    <span>Suomi</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <button id="menu-toggle" class="block md:hidden focus:outline-none">
+                    <i data-lucide="menu" class="h-6 w-6"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-24">
+        <!-- Teacher Hero Section -->
+        <section class="relative py-20 overflow-hidden">
+            <div class="container-custom">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="fade-in">
+                        <a href="index.html#teachers"
+                            class="inline-flex items-center text-sm font-medium text-pink-600 mb-8 hover:text-pink-700 transition-colors">
+                            <i data-lucide="arrow-left" class="h-4 w-4 mr-2"></i>
+                            <span data-i18n="nav.back_to_teachers">Back to Teachers</span>
+                        </a>
+                        <h1 id="teacher-name" class="text-4xl md:text-5xl lg:text-6xl font-medium mb-4">Teacher Name
+                        </h1>
+                        <p id="teacher-role" class="text-xl text-pink-500 font-medium mb-8 uppercase tracking-wider">
+                            Role / Specialization</p>
+                        <blockquote
+                            class="relative border-l-4 border-pink-200 pl-6 mb-10 italic text-2xl text-gray-600 font-serif">
+                            <p id="teacher-quote">"Inspirational quote goes here."</p>
+                        </blockquote>
+                        <div class="flex flex-wrap gap-4 mb-10">
+                            <!-- Social / Links Placeholders -->
+                            <a href="#"
+                                class="p-3 bg-white rounded-full shadow-sm hover:shadow-md transition-all text-gray-600 hover:text-pink-500">
+                                <i data-lucide="instagram" class="h-5 w-5"></i>
+                            </a>
+                            <a href="#"
+                                class="p-3 bg-white rounded-full shadow-sm hover:shadow-md transition-all text-gray-600 hover:text-pink-500">
+                                <i data-lucide="globe" class="h-5 w-5"></i>
+                            </a>
+                            <a href="#"
+                                class="p-3 bg-white rounded-full shadow-sm hover:shadow-md transition-all text-gray-600 hover:text-pink-500">
+                                <i data-lucide="mail" class="h-5 w-5"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="fade-in delay-200">
+                        <div class="relative h-[600px] rounded-2xl overflow-hidden shadow-2xl">
+                            <img id="teacher-image" src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b"
+                                alt="Teacher" class="absolute inset-0 w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Sections -->
+        <section class="section-padding bg-white">
+            <div class="container-custom">
+                <div class="max-w-4xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                        <div class="md:col-span-2">
+                            <h2 class="text-3xl font-medium mb-6" data-i18n="teachers.biography">My Journey</h2>
+                            <div id="teacher-bio" class="text-lg text-gray-600 leading-relaxed space-y-4">
+                                <!-- Bio injected here -->
+                            </div>
+
+                            <h2 class="text-3xl font-medium mt-16 mb-6" data-i18n="teachers.philosophy">My Philosophy
+                            </h2>
+                            <p id="teacher-philosophy" class="text-lg text-gray-600 leading-relaxed italic">
+                                <!-- Philosophy injected here -->
+                            </p>
+                        </div>
+                        <div>
+                            <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100">
+                                <h3 class="text-xl font-medium mb-6" data-i18n="teachers.highlights">Specializations
+                                </h3>
+                                <ul id="teacher-highlights" class="space-y-4">
+                                    <!-- Highlights injected here -->
+                                </ul>
+
+                                <div class="mt-12">
+                                    <h3 class="text-xl font-medium mb-6" data-i18n="teachers.book_class">Practise with
+                                        Me</h3>
+                                    <a href="index.html#schedule"
+                                        class="block w-full text-center px-6 py-4 bg-gray-800 text-white font-medium rounded-xl hover:bg-gray-700 transition-colors shadow-md">
+                                        View Schedule
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Placeholder for Instagram or Gallery -->
+        <section class="section-padding bg-gray-50 overflow-hidden">
+            <div class="container-custom">
+                <div class="flex items-center justify-between mb-12">
+                    <h2 class="text-3xl font-medium" data-i18n="teachers.gallery">Moments from Practice</h2>
+                    <div class="flex gap-2">
+                        <button class="p-2 rounded-full border border-gray-200 hover:bg-white transition-colors"><i
+                                data-lucide="chevron-left" class="h-5 w-5"></i></button>
+                        <button class="p-2 rounded-full border border-gray-200 hover:bg-white transition-colors"><i
+                                data-lucide="chevron-right" class="h-5 w-5"></i></button>
+                    </div>
+                </div>
+                <!-- Simple Gallery Placeholders -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="aspect-square bg-gray-200 rounded-xl overflow-hidden shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b" alt="Gallery"
+                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="aspect-square bg-gray-200 rounded-xl overflow-hidden shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1599447421416-3414500d18a5" alt="Gallery"
+                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="aspect-square bg-gray-200 rounded-xl overflow-hidden shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3" alt="Gallery"
+                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="aspect-square bg-gray-200 rounded-xl overflow-hidden shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b" alt="Gallery"
+                            class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Same as index.html) -->
+    <footer id="footer" class="bg-gray-900 text-white pt-20 pb-10">
+        <div class="container-custom">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="lg:col-span-1">
+                    <a href="index.html#home"
+                        class="text-3xl font-serif font-medium tracking-wide mb-6 inline-block">GoYoga</a>
+                    <p class="text-gray-400 mb-8 max-w-xs" data-i18n="footer.description">Traditional Ashtanga yoga and
+                        wellness sanctuary in the heart of Tallinn.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-pink-400 transition-colors"><i data-lucide="instagram"
+                                class="h-6 w-6"></i></a>
+                        <a href="#" class="text-white hover:text-pink-400 transition-colors"><i data-lucide="facebook"
+                                class="h-6 w-6"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-medium mb-6" data-i18n="footer.quick_links">Quick Links</h4>
+                    <ul class="space-y-4">
+                        <li><a href="index.html#home" class="text-gray-400 hover:text-white transition-colors"
+                                data-i18n="nav.home">Home</a></li>
+                        <li><a href="index.html#about" class="text-gray-400 hover:text-white transition-colors"
+                                data-i18n="nav.about">About</a></li>
+                        <li><a href="index.html#schedule" class="text-gray-400 hover:text-white transition-colors"
+                                data-i18n="nav.schedule">Schedule</a></li>
+                        <li><a href="index.html#pricing" class="text-gray-400 hover:text-white transition-colors"
+                                data-i18n="nav.pricing">Pricing</a></li>
+                        <li><a href="index.html#teachers" class="text-gray-400 hover:text-white transition-colors"
+                                data-i18n="nav.teachers">Teachers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-medium mb-6" data-i18n="footer.contact">Contact</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i data-lucide="map-pin" class="h-5 w-5 text-pink-500 mr-3 mt-1"></i>
+                            <span class="text-gray-400">Narva mnt 7D, 3rd Floor<br>Tallinn, 10117</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="mail" class="h-5 w-5 text-pink-500 mr-3"></i>
+                            <a href="mailto:info@goyoga.ee"
+                                class="text-gray-400 hover:text-white transition-colors">info@goyoga.ee</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-medium mb-6" data-i18n="footer.newsletter">Newsletter</h4>
+                    <p class="text-gray-400 mb-4" data-i18n="footer.newsletter_description">Stay updated with our latest
+                        events and news.</p>
+                    <form class="flex mt-2">
+                        <input type="email" placeholder="Email Address"
+                            class="bg-gray-800 text-white px-4 py-3 rounded-l-md focus:outline-none w-full border-gray-700 border">
+                        <button
+                            class="bg-white text-gray-900 px-4 py-3 rounded-r-md font-medium hover:bg-gray-200 transition-colors">Join</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2025 GoYoga.ee. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    <script src="js/teacher-page.js"></script>
+</body>
+
+</html>

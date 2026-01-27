@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="seo-title">GoYoga Tallinn | Ashtanga Yoga Studio</title>
+    <meta name="description" id="seo-description"
+        content="Explore the practice of Ashtanga Yoga with GoYoga.ee in Tallinn. Find class schedules, pricing, and connect with our experienced teachers." />
+    <meta name="keywords" id="seo-keywords" content="Ashtanga Yoga Tallinn, Mysore style, Yoga Estonia">
+    <meta name="author" content="GoYoga.ee" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://goyoga.ee/">
+    <meta property="og:title" id="og-title" content="GoYoga Tallinn | Ashtanga Yoga">
+    <meta property="og:description" id="og-description" content="Traditional Ashtanga yoga in the heart of Tallinn.">
+    <meta property="og:image" id="og-image" content="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://goyoga.ee/">
+    <meta property="twitter:title" id="twitter-title" content="GoYoga Tallinn">
+    <meta property="twitter:description" id="twitter-description" content="Traditional Ashtanga yoga in Tallinn.">
+    <meta property="twitter:image" id="twitter-image"
+        content="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+
+    <link rel="canonical" href="https://goyoga.ee/" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto+Mono&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- SEO Config -->
+    <script src="js/seo-data.js"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <!-- AI & Bot Context (Visually Hidden) -->
+    <div class="sr-only" aria-hidden="false">
+        <p>GoYoga.ee is the premier Yoga & Wellness Sanctuary in Tallinn, offering traditional yoga and wellness
+            practises. Our shala in Tallinn City Center at Narva mnt 7D provides a safe space for people of all ages to
+            switch off, relax, and reinvigorate with Ashtanga, Vinyasa, Yin Yoga, Pilates, and various wellness events.
+        </p>
+    </div>
+
+    <!-- Navbar -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+        <div class="container-custom py-4 md:py-5">
+            <div class="flex items-center justify-between">
+                <a href="#home" class="text-2xl font-serif font-medium tracking-wide">GoYoga</a>
+                <nav class="hidden md:block">
+                    <ul class="flex items-center space-x-8">
+                        <li><a href="#home" class="text-sm font-medium link-underline transition-colors"
+                                data-i18n="nav.home">Home</a></li>
+                        <li><a href="#about" class="text-sm font-medium link-underline transition-colors"
+                                data-i18n="nav.about">About</a></li>
+                        <li><a href="#studio" class="text-sm font-medium link-underline transition-colors"
+                                data-i18n="nav.studio">Studio</a></li>
+                        <li><a href="#schedule" class="text-sm font-medium link-underline transition-colors"
+                                data-i18n="nav.schedule">Schedule</a></li>
+                        <li><a href="#pricing" class="text-sm font-medium link-underline transition-colors"
+                                data-i18n="nav.pricing">Pricing</a></li>
+                        <li><a href="#teachers" class="text-sm font-medium link-underline transition-colors"
+                                data-i18n="nav.teachers">Teachers</a></li>
+                        <li><a href="#events" class="text-sm font-medium link-underline transition-colors"
+                                data-i18n="nav.events">Events</a></li>
+                        <li><a href="#community" class="text-sm font-medium link-underline transition-colors"
+                                data-i18n="nav.community">Community</a></li>
+                        <li><a href="#contact" class="text-sm font-medium link-underline transition-colors"
+                                data-i18n="nav.contact">Contact</a></li>
+
+                        <!-- Language Switcher -->
+                        <li class="language-switcher ml-4">
+                            <button id="language-toggle" class="flex items-center gap-2 text-sm font-medium">
+                                <span class="language-flag-container">
+                                    <img src="https://flagcdn.com/w20/gb.png" alt="English" class="language-flag"
+                                        id="current-flag">
+                                </span>
+                                <span id="current-language">EN</span>
+                                <i data-lucide="chevron-down" class="h-4 w-4"></i>
+                            </button>
+                            <div class="language-dropdown" id="language-dropdown">
+                                <div class="language-option" data-lang="en">
+                                    <img src="https://flagcdn.com/w20/gb.png" alt="English" class="language-flag">
+                                    <span>English</span>
+                                </div>
+                                <div class="language-option" data-lang="et">
+                                    <img src="https://flagcdn.com/w20/ee.png" alt="Eesti" class="language-flag">
+                                    <span>Eesti</span>
+                                </div>
+                                <div class="language-option" data-lang="fi">
+                                    <img src="https://flagcdn.com/w20/fi.png" alt="Suomi" class="language-flag">
+                                    <span>Suomi</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <!-- Mobile Language Switcher -->
+                    <div class="language-switcher md:hidden">
+                        <button id="mobile-language-toggle" class="flex items-center gap-2 text-sm font-medium">
+                            <img src="https://flagcdn.com/w20/gb.png" alt="English" class="language-flag"
+                                id="mobile-current-flag">
+                            <span id="mobile-current-language">EN</span>
+                        </button>
+                        <div class="language-dropdown" id="mobile-language-dropdown">
+                            <div class="language-option-mobile" data-lang="en">
+                                <img src="https://flagcdn.com/w20/gb.png" alt="English" class="language-flag">
+                                <span>English</span>
+                            </div>
+                            <div class="language-option-mobile" data-lang="et">
+                                <img src="https://flagcdn.com/w20/ee.png" alt="Eesti" class="language-flag">
+                                <span>Eesti</span>
+                            </div>
+                            <div class="language-option-mobile" data-lang="fi">
+                                <img src="https://flagcdn.com/w20/fi.png" alt="Suomi" class="language-flag">
+                                <span>Suomi</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="menu-toggle" class="block md:hidden focus:outline-none">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="fixed inset-0 z-40 bg-white transform translate-x-full transition-transform duration-300 ease-in-out md:hidden">
+            <div class="flex justify-end p-4">
+                <button id="menu-close" class="focus:outline-none">
+                    <i data-lucide="x" class="h-6 w-6"></i>
+                </button>
+            </div>
+            <div class="flex flex-col h-full justify-center items-center space-y-8 p-8">
+                <a href="#home" class="mobile-link text-xl font-medium transition-colors hover:text-gray-600"
+                    data-i18n="nav.home">Home</a>
+                <a href="#about" class="mobile-link text-xl font-medium transition-colors hover:text-gray-600"
+                    data-i18n="nav.about">About</a>
+                <a href="#studio" class="mobile-link text-xl font-medium transition-colors hover:text-gray-600"
+                    data-i18n="nav.studio">Studio</a>
+                <a href="#schedule" class="mobile-link text-xl font-medium transition-colors hover:text-gray-600"
+                    data-i18n="nav.schedule">Schedule</a>
+                <a href="#pricing" class="mobile-link text-xl font-medium transition-colors hover:text-gray-600"
+                    data-i18n="nav.pricing">Pricing</a>
+                <a href="#teachers" class="mobile-link text-xl font-medium transition-colors hover:text-gray-600"
+                    data-i18n="nav.teachers">Teachers</a>
+                <a href="#events" class="mobile-link text-xl font-medium transition-colors hover:text-gray-600"
+                    data-i18n="nav.events">Events</a>
+                <a href="#community" class="mobile-link text-xl font-medium transition-colors hover:text-gray-600"
+                    data-i18n="nav.community">Community</a>
+                <a href="#contact" class="mobile-link text-xl font-medium transition-colors hover:text-gray-600"
+                    data-i18n="nav.contact">Contact</a>
+
+                <!-- Mobile Language Options in Menu -->
+                <div class="flex flex-col gap-4 mt-8">
+                    <div class="text-center mb-2 text-gray-500 font-medium" data-i18n="nav.language">Language</div>
+                    <div class="flex gap-4">
+                        <button class="language-option-mobile flex items-center gap-2 px-4 py-2 rounded-lg border"
+                            data-lang="en">
+                            <img src="https://flagcdn.com/w20/gb.png" alt="English" class="language-flag">
+                            <span>English</span>
+                        </button>
+                        <button class="language-option-mobile flex items-center gap-2 px-4 py-2 rounded-lg border"
+                            data-lang="et">
+                            <img src="https://flagcdn.com/w20/ee.png" alt="Eesti" class="language-flag">
+                            <span>Eesti</span>
+                        </button>
+                        <button class="language-option-mobile flex items-center gap-2 px-4 py-2 rounded-lg border"
+                            data-lang="fi">
+                            <img src="https://flagcdn.com/w20/fi.png" alt="Suomi" class="language-flag">
+                            <span>Suomi</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden bg-gray-100">
+            <div class="absolute inset-0 z-0">
+                <div class="absolute inset-0 bg-cover bg-center"
+                    style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb'); filter: brightness(0.9) contrast(1.1);">
+                </div>
+                <div class="absolute inset-0 bg-gray-900/40"></div>
+            </div>
+            <div class="container-custom relative z-10 text-center text-white fade-in">
+                <span
+                    class="inline-block px-3 py-1 text-xs font-medium tracking-wider uppercase bg-white/10 backdrop-blur-sm rounded-full mb-4"
+                    data-i18n="hero.tagline">Mysore Style Ashtanga</span>
+                <h1 class="mb-6 text-4xl md:text-5xl lg:text-6xl font-medium" data-i18n="hero.title">Home of traditional
+                    yoga and wellness practises in Tallinn</h1>
+                <p class="max-w-2xl mx-auto mb-10 text-lg text-white/90" data-i18n="hero.description">Daily yoga classes
+                    and wellness events in the centre of Tallinn. A safe space to switch off, relax and reinvigorate.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#schedule"
+                        class="px-8 py-3 bg-white text-gray-800 font-medium rounded-md hover:bg-white/90 transition-colors shadow-md"
+                        data-i18n="hero.view_schedule">View Schedule</a>
+                    <a href="#events"
+                        class="px-8 py-3 border border-white/60 rounded-md hover:bg-white/10 transition-colors"
+                        data-i18n="hero.events">Events</a>
+                </div>
+            </div>
+            <a href="#about"
+                class="absolute bottom-24 md:bottom-10 left-1/2 transform -translate-x-1/2 text-white fade-in animate-delay-800">
+                <div class="flex flex-col items-center">
+                    <span class="text-sm font-medium mb-2" data-i18n="hero.discover_more">Discover More</span>
+                    <i data-lucide="arrow-down" class="h-5 w-5 animate-bounce"></i>
+                </div>
+            </a>
+            <!-- Hero Seasonal Offer -->
+            <a href="offers.html"
+                class="absolute bottom-8 right-8 bg-white/20 backdrop-blur-md text-white p-3 rounded-lg shadow-lg flex items-center space-x-3 transition-all duration-300 hover:bg-white/30 animate-gentle-pulse">
+                <i data-lucide="gift" class="h-5 w-5 text-pink-300"></i>
+                <div>
+                    <p class="text-sm font-semibold" data-i18n="hero.seasonal_offer">Seasonal Offer!</p>
+                    <div id="hero-countdown" class="flex items-center text-xs space-x-1 font-mono">
+                        <!-- Mini countdown will be injected here -->
+                    </div>
+                </div>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-padding bg-white fade-in-section">
+            <div class="container-custom">
+                <div class="max-w-3xl mx-auto text-center mb-16">
+                    <span
+                        class="inline-block px-3 py-1 text-xs font-medium tracking-wider uppercase text-pink-700 bg-pink-100 rounded-full mb-4"
+                        data-i18n="about.tagline">About Ashtanga</span>
+                    <h2 class="text-3xl md:text-4xl font-medium mb-6" data-i18n="about.title">An Ancient Practice for
+                        Modern Life</h2>
+                    <p class="text-lg text-gray-500" data-i18n="about.description">Ashtanga yoga is a system of yoga
+                        recorded by the sage Vamana Rishi in the Yoga Korunta, an ancient manuscript.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h3 class="text-2xl font-medium mb-4" data-i18n="about.subtitle">The Eight Limbs</h3>
+                        <p class="mb-6" data-i18n="about.content1">Ashtanga means "eight limbs" in Sanskrit, referring
+                            to the eight aspects of yoga described by Patanjali in the Yoga Sutras. These eight limbs
+                            are a progressive system that purifies the body and mind, leading to self-realization.</p>
+                        <p class="mb-6" data-i18n="about.content2">The practice combines flowing movements with breath
+                            (vinyasa), specific gazing points (drishti), and energy locks (bandhas) to create a moving
+                            meditation that builds strength, flexibility, and inner peace.</p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-12">
+                            <div
+                                class="bg-gray-50 p-6 rounded-xl border border-gray-100 transition-all duration-300 hover:shadow-md">
+                                <div class="flex items-center mb-4">
+                                    <div class="p-2 bg-pink-100 rounded-lg mr-3">
+                                        <i data-lucide="flower-2" class="h-6 w-6 text-pink-600"></i>
+                                    </div>
+                                    <h4 class="font-bold text-xl" data-i18n="about.benefits.physical.title">Yoga</h4>
+                                </div>
+                                <p class="text-sm text-gray-600 leading-relaxed"
+                                    data-i18n="about.benefits.physical.description">
+                                    Ashtanga, Vinyasa, Yin, Strength, 60+ yoga, Pilates, Qigong.
+                                </p>
+                            </div>
+                            <div
+                                class="bg-gray-50 p-6 rounded-xl border border-gray-100 transition-all duration-300 hover:shadow-md">
+                                <div class="flex items-center mb-4">
+                                    <div class="p-2 bg-pink-100 rounded-lg mr-3">
+                                        <i data-lucide="sparkles" class="h-6 w-6 text-pink-600"></i>
+                                    </div>
+                                    <h4 class="font-bold text-xl" data-i18n="about.benefits.mental.title">Wellness</h4>
+                                </div>
+                                <p class="text-sm text-gray-600 leading-relaxed"
+                                    data-i18n="about.benefits.mental.description">
+                                    Meditations, Sound Baths, Cacao Ceremonies, Yoga Nidra.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative h-[500px] rounded-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843"
+                            alt="Student practicing traditional Ashtanga Yoga at GoYoga Tallinn studio"
+                            class="absolute inset-0 w-full h-full object-cover rounded-lg"
+                            style="filter: brightness(1.05) contrast(1.1)">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Studio Section -->
+        <section id="studio" class="section-padding bg-gray-50 fade-in-section">
+            <div class="container-custom">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <span
+                            class="inline-block px-3 py-1 text-xs font-medium tracking-wider uppercase text-pink-700 bg-white rounded-full mb-4"
+                            data-i18n="studio.tagline">Our Space</span>
+                        <h2 class="text-3xl md:text-4xl font-medium mb-6" data-i18n="studio.title">A Sanctuary in the
+                            City</h2>
+                        <p class="text-lg text-gray-600 mb-4" data-i18n="studio.description1">Located at <span
+                                class="font-semibold">Narva mnt 7D, Tallinn</span>, our studio is a peaceful retreat on
+                            the 3rd floor, away from the city's hustle and bustle. Please note that access is by stairs
+                            only as there is no elevator in the building.</p>
+                        <p class="text-gray-600 mb-6" data-i18n="studio.description2">Designed with natural wood floors
+                            and calming earth tones, the space is filled with light and positive energy. We provide all
+                            the amenities you need for a comfortable practice, including high-quality mats, props,
+                            changing rooms, and a cozy tea corner for you to relax in before or after your class.</p>
+                        <a href="rent.html" id="rent-studio-button"
+                            class="inline-block px-8 py-3 bg-gray-800 text-white font-medium rounded-md hover:bg-gray-700 transition-colors"
+                            data-i18n="studio.rent_button">Rent Our Space</a>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="https://media.gettyimages.com/id/1495479126/photo/interior-of-an-empty-yoga-center.jpg?s=612x612&w=0&k=20&c=B9KM7aHD_YgZGTYSdjVc78ymYy8mayZMEX61YBy6NDs="
+                            alt="Spacious and bright yoga shala interior at Narva mnt 7D Tallinn"
+                            class="rounded-lg shadow-md w-full h-full object-cover">
+                        <img src="https://st3.depositphotos.com/10439530/13566/i/380/depositphotos_135665562-stock-photo-couple-sitting-in-lotus-position.jpg"
+                            alt="Yoga practitioners in lotus position at GoYoga Tallinn"
+                            class="rounded-lg shadow-md w-full h-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1545389336-cf090694435e"
+                            alt="Meditation and mindfulness session at our Tallinn studio"
+                            class="rounded-lg shadow-md w-full h-full object-cover">
+                        <img src="https://media.istockphoto.com/id/869915476/photo/yoga-equipment.jpg?s=612x612&w=0&k=20&c=HKmrau7egtTYtw4KUgoLd9U1qZ07rnJNh7sq7JXCvr8="
+                            alt="Professional yoga props including mats and blocks for Ashtanga practice"
+                            class="rounded-lg shadow-md w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="section-padding bg-white fade-in-section">
+            <div class="container-custom">
+                <div class="max-w-3xl mx-auto text-center mb-16">
+                    <span
+                        class="inline-block px-3 py-1 text-xs font-medium tracking-wider uppercase text-pink-700 bg-pink-100 rounded-full mb-4"
+                        data-i18n="schedule.tagline">Live Class Schedule</span>
+                    <h2 class="text-3xl md:text-4xl font-medium mb-6" data-i18n="schedule.title">Find Your Time to
+                        Practice</h2>
+                    <p class="text-lg text-gray-500" data-i18n="schedule.description">Our schedule is always up-to-date.
+                        Find a class and book your spot directly through the calendar below.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden p-2">
+                    <iframe src="https://app.hopitude.com/et/calendar?cl=491" width="100%" height="800px"
+                        style="border:none; border-radius: 0.75rem;" title="GoYoga.ee Class Schedule">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="section-padding bg-gray-50 fade-in-section">
+            <div class="container-custom">
+                <div class="max-w-3xl mx-auto text-center mb-16">
+                    <span
+                        class="inline-block px-3 py-1 text-xs font-medium tracking-wider uppercase text-pink-700 bg-white rounded-full mb-4"
+                        data-i18n="pricing.tagline">Pricing Options</span>
+                    <h2 class="text-3xl md:text-4xl font-medium mb-6" data-i18n="pricing.title">Invest in Your Practice
+                    </h2>
+                    <p class="text-lg text-gray-500" data-i18n="pricing.description">We offer flexible pricing options
+                        to suit your schedule and commitment level. Choose a category to see the options.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Pricing Group 1: Single Session -->
+                    <div
+                        class="border border-gray-200 rounded-xl p-8 flex flex-col items-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                        <i data-lucide="user" class="h-12 w-12 text-pink-500 mb-4"></i>
+                        <h3 class="text-2xl font-medium mb-2" data-i18n="pricing.single.title">Single Session</h3>
+                        <p class="text-gray-600 mb-6 flex-grow" data-i18n="pricing.single.description">Perfect for
+                            drop-ins or trying out a class.</p>
+                        <button data-pricing-group="single" aria-label="View single session pricing options"
+                            class="pricing-button mt-auto w-full py-3 text-center rounded-md font-medium transition-colors bg-pink-100 text-pink-800 hover:bg-pink-200"
+                            data-i18n="pricing.view_options">View Options</button>
+                    </div>
+                    <!-- Pricing Group 2: Memberships (Most Popular) -->
+                    <div
+                        class="border-2 border-pink-500 rounded-xl p-8 flex flex-col items-center text-center transition-all duration-300 shadow-lg -translate-y-0 md:-translate-y-4 relative">
+                        <div class="absolute top-0 -right-1 bg-pink-500 text-white text-xs font-medium px-3 py-1 rounded-full -mt-3 shadow-md"
+                            data-i18n="pricing.most_popular">Most Popular</div>
+                        <i data-lucide="gem" class="h-12 w-12 text-pink-500 mb-4"></i>
+                        <h3 class="text-2xl font-medium mb-2" data-i18n="pricing.memberships.title">Memberships</h3>
+                        <p class="text-gray-600 mb-6 flex-grow" data-i18n="pricing.memberships.description">The best
+                            value for dedicated practitioners.</p>
+                        <button data-pricing-group="memberships"
+                            aria-label="View membership and unlimited yoga pass options"
+                            class="pricing-button mt-auto w-full py-3 text-center rounded-md font-medium transition-colors bg-gray-800 text-white hover:bg-gray-700"
+                            data-i18n="pricing.view_options">View Options</button>
+                    </div>
+                    <!-- Pricing Group 3: Multi-Visit Passes -->
+                    <div
+                        class="border border-gray-200 rounded-xl p-8 flex flex-col items-center text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                        <i data-lucide="star" class="h-12 w-12 text-pink-500 mb-4"></i>
+                        <h3 class="text-2xl font-medium mb-2" data-i18n="pricing.passes.title">Multi-Visit Passes</h3>
+                        <p class="text-gray-600 mb-6 flex-grow" data-i18n="pricing.passes.description">Great value for
+                            regular students who need flexibility.</p>
+                        <button data-pricing-group="passes"
+                            class="pricing-button mt-auto w-full py-3 text-center rounded-md font-medium transition-colors bg-pink-100 text-pink-800 hover:bg-pink-200"
+                            data-i18n="pricing.view_options">View Options</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Teachers Section -->
+        <section id="teachers" class="section-padding bg-white fade-in-section">
+            <div class="container-custom">
+                <div class="max-w-3xl mx-auto text-center mb-16">
+                    <span
+                        class="inline-block px-3 py-1 text-xs font-medium tracking-wider uppercase text-pink-700 bg-pink-100 rounded-full mb-4"
+                        data-i18n="teachers.tagline">Our Teachers</span>
+                    <h2 class="text-3xl md:text-4xl font-medium mb-6" data-i18n="teachers.title">Learn from Experienced
+                        Practitioners</h2>
+                    <p class="text-lg text-gray-500" data-i18n="teachers.description">Our teachers are dedicated to
+                        guiding you through the Ashtanga yoga journey with knowledge, compassion, and authenticity.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+                    <!-- Teacher 1: Raili Maripuu -->
+                    <div class="teacher-card bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md"
+                        data-teacher-id="raili">
+                        <div class="relative h-72 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b" alt="Raili Maripuu"
+                                class="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
+                                loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="teacher-name text-xl font-medium mb-1">Raili Maripuu</h3>
+                            <p class="teacher-role text-pink-500 mb-4 text-sm font-semibold uppercase tracking-wider"
+                                data-i18n="teachers.raili.title">Founder | Ashtanga</p>
+                            <p class="teacher-bio text-gray-600 mb-6 text-sm leading-relaxed"
+                                data-i18n="teachers.raili.description">Bringing authentic Ashtanga practice to Tallinn
+                                with decades of experience.</p>
+                            <a href="teacher.html?id=raili"
+                                class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-gray-900 border-b-2 border-pink-200 hover:border-pink-500 transition-all pb-1 group">
+                                <span data-i18n="teachers.discover">Discover Journey</span>
+                                <i data-lucide="arrow-right"
+                                    class="ml-2 h-3 w-3 transition-transform group-hover:translate-x-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Teacher 2: Victoria Palusaar -->
+                    <div class="teacher-card bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md"
+                        data-teacher-id="victoria">
+                        <div class="relative h-72 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1599447421416-3414500d18a5"
+                                alt="Victoria Palusaar"
+                                class="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
+                                loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="teacher-name text-xl font-medium mb-1">Victoria Palusaar</h3>
+                            <p class="teacher-role text-pink-500 mb-4 text-sm font-semibold uppercase tracking-wider"
+                                data-i18n="teachers.victoria.title">Ashtanga | Nutritional Therapist</p>
+                            <p class="teacher-bio text-gray-600 mb-6 text-sm leading-relaxed"
+                                data-i18n="teachers.victoria.description">Focusing on conscious eating and the
+                                traditional Ashtanga method.</p>
+                            <a href="teacher.html?id=victoria"
+                                class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-gray-900 border-b-2 border-pink-200 hover:border-pink-500 transition-all pb-1 group">
+                                <span data-i18n="teachers.discover">Discover Journey</span>
+                                <i data-lucide="arrow-right"
+                                    class="ml-2 h-3 w-3 transition-transform group-hover:translate-x-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Teacher 3: Keiu Grossberg -->
+                    <div class="teacher-card bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md"
+                        data-teacher-id="keiu">
+                        <div class="relative h-72 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3" alt="Keiu Grossberg"
+                                class="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
+                                loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="teacher-name text-xl font-medium mb-1">Keiu Grossberg</h3>
+                            <p class="teacher-role text-pink-500 mb-4 text-sm font-semibold uppercase tracking-wider"
+                                data-i18n="teachers.keiu.title">Ashtanga Yoga</p>
+                            <p class="teacher-bio text-gray-600 mb-6 text-sm leading-relaxed"
+                                data-i18n="teachers.keiu.description">
+                                Guiding students through the rhythmic flow of breath and movement.</p>
+                            <a href="teacher.html?id=keiu"
+                                class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-gray-900 border-b-2 border-pink-200 hover:border-pink-500 transition-all pb-1 group">
+                                <span data-i18n="teachers.discover">Discover Journey</span>
+                                <i data-lucide="arrow-right"
+                                    class="ml-2 h-3 w-3 transition-transform group-hover:translate-x-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Teacher 4: Triin Parro -->
+                    <div class="teacher-card bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md"
+                        data-teacher-id="triin">
+                        <div class="relative h-72 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b" alt="Triin Parro"
+                                class="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
+                                loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="teacher-name text-xl font-medium mb-1">Triin Parro</h3>
+                            <p class="teacher-role text-pink-500 mb-4 text-sm font-semibold uppercase tracking-wider"
+                                data-i18n="teachers.triin.title">Strength & Holistic Health</p>
+                            <p class="teacher-bio text-gray-600 mb-6 text-sm leading-relaxed"
+                                data-i18n="teachers.triin.description">Specializing in strength training and
+                                personalized wellness journeys.</p>
+                            <a href="teacher.html?id=triin"
+                                class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-gray-900 border-b-2 border-pink-200 hover:border-pink-500 transition-all pb-1 group">
+                                <span data-i18n="teachers.discover">Discover Journey</span>
+                                <i data-lucide="arrow-right"
+                                    class="ml-2 h-3 w-3 transition-transform group-hover:translate-x-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Teacher 5: Dian Jarvenkyla -->
+                    <div class="teacher-card bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md"
+                        data-teacher-id="dian">
+                        <div class="relative h-72 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773"
+                                alt="Dian Jarvenkyla"
+                                class="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
+                                loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="teacher-name text-xl font-medium mb-1">Dian Jarvenkyla</h3>
+                            <p class="teacher-role text-pink-500 mb-4 text-sm font-semibold uppercase tracking-wider"
+                                data-i18n="teachers.dian.title">Vinyasa Flow</p>
+                            <p class="teacher-bio text-gray-600 mb-6 text-sm leading-relaxed"
+                                data-i18n="teachers.dian.description">
+                                Creating dynamic and creative sequences for all levels.</p>
+                            <a href="teacher.html?id=dian"
+                                class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-gray-900 border-b-2 border-pink-200 hover:border-pink-500 transition-all pb-1 group">
+                                <span data-i18n="teachers.discover">Discover Journey</span>
+                                <i data-lucide="arrow-right"
+                                    class="ml-2 h-3 w-3 transition-transform group-hover:translate-x-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Teacher 6: Kätlin Epner -->
+                    <div class="teacher-card bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md"
+                        data-teacher-id="katlin">
+                        <div class="relative h-72 overflow-hidden">
+                            <img src="assets/images/katlin.png" alt="Kätlin Epner"
+                                class="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
+                                loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="teacher-name text-xl font-medium mb-1">Kätlin Epner</h3>
+                            <p class="teacher-role text-pink-500 mb-4 text-sm font-semibold uppercase tracking-wider"
+                                data-i18n="teachers.katlin.title">Yin Yoga Specialist</p>
+                            <p class="teacher-bio text-gray-600 mb-6 text-sm leading-relaxed"
+                                data-i18n="teachers.katlin.description">Holding space for deep release and meditative
+                                stillness.</p>
+                            <a href="teacher.html?id=katlin"
+                                class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-gray-900 border-b-2 border-pink-200 hover:border-pink-500 transition-all pb-1 group">
+                                <span data-i18n="teachers.discover">Discover Journey</span>
+                                <i data-lucide="arrow-right"
+                                    class="ml-2 h-3 w-3 transition-transform group-hover:translate-x-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Teacher 7: Kaia Karjatse -->
+                    <div class="teacher-card bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md"
+                        data-teacher-id="kaia">
+                        <div class="relative h-72 overflow-hidden">
+                            <img src="assets/images/kaia.png" alt="Kaia Karjatse"
+                                class="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
+                                loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="teacher-name text-xl font-medium mb-1">Kaia Karjatse</h3>
+                            <p class="teacher-role text-pink-500 mb-4 text-sm font-semibold uppercase tracking-wider"
+                                data-i18n="teachers.kaia.title">60+ Yoga | Sound Therapy</p>
+                            <p class="teacher-bio text-gray-600 mb-6 text-sm leading-relaxed"
+                                data-i18n="teachers.kaia.description">
+                                Gentle movement and healing vibrations for all stages of life.</p>
+                            <a href="teacher.html?id=kaia"
+                                class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-gray-900 border-b-2 border-pink-200 hover:border-pink-500 transition-all pb-1 group">
+                                <span data-i18n="teachers.discover">Discover Journey</span>
+                                <i data-lucide="arrow-right"
+                                    class="ml-2 h-3 w-3 transition-transform group-hover:translate-x-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Teacher 8: Edith Tiitsaar -->
+                    <div class="teacher-card bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md"
+                        data-teacher-id="edith">
+                        <div class="relative h-72 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597" alt="Edith Tiitsaar"
+                                class="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
+                                loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="teacher-name text-xl font-medium mb-1">Edith Tiitsaar</h3>
+                            <p class="teacher-role text-pink-500 mb-4 text-sm font-semibold uppercase tracking-wider"
+                                data-i18n="teachers.edith.title">Qigong | Energy Work</p>
+                            <p class="teacher-bio text-gray-600 mb-6 text-sm leading-relaxed"
+                                data-i18n="teachers.edith.description">Working with meridians and the Radiant Lotus
+                                Qigong tradition.</p>
+                            <a href="teacher.html?id=edith"
+                                class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-gray-900 border-b-2 border-pink-200 hover:border-pink-500 transition-all pb-1 group">
+                                <span data-i18n="teachers.discover">Discover Journey</span>
+                                <i data-lucide="arrow-right"
+                                    class="ml-2 h-3 w-3 transition-transform group-hover:translate-x-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Teacher 9: Marit Tuisk -->
+                    <div class="teacher-card bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md"
+                        data-teacher-id="marit">
+                        <div class="relative h-72 overflow-hidden">
+                            <img src="assets/images/marit.png" alt="Marit Tuisk"
+                                class="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
+                                loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="teacher-name text-xl font-medium mb-1">Marit Tuisk</h3>
+                            <p class="teacher-role text-pink-500 mb-4 text-sm font-semibold uppercase tracking-wider"
+                                data-i18n="teachers.marit.title">Meditations | Cacao Ceremonies</p>
+                            <p class="teacher-bio text-gray-600 mb-6 text-sm leading-relaxed"
+                                data-i18n="teachers.marit.description">Opening hearts through sacred rituals and deep
+                                presence.</p>
+                            <a href="teacher.html?id=marit"
+                                class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-gray-900 border-b-2 border-pink-200 hover:border-pink-500 transition-all pb-1 group">
+                                <span data-i18n="teachers.discover">Discover Journey</span>
+                                <i data-lucide="arrow-right"
+                                    class="ml-2 h-3 w-3 transition-transform group-hover:translate-x-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Teacher 10: David Lepp -->
+                    <div class="teacher-card bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md"
+                        data-teacher-id="david">
+                        <div class="relative h-72 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1514533212735-5df27d970db0" alt="David Lepp"
+                                class="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
+                                loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="teacher-name text-xl font-medium mb-1">David Lepp</h3>
+                            <p class="teacher-role text-pink-500 mb-4 text-sm font-semibold uppercase tracking-wider"
+                                data-i18n="teachers.david.title">Sound Baths | Yoga Nidra</p>
+                            <p class="teacher-bio text-gray-600 mb-6 text-sm leading-relaxed"
+                                data-i18n="teachers.david.description">Mastering the gong to clear blockages and restore
+                                harmony.</p>
+                            <a href="teacher.html?id=david"
+                                class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-gray-900 border-b-2 border-pink-200 hover:border-pink-500 transition-all pb-1 group">
+                                <span data-i18n="teachers.discover">Discover Journey</span>
+                                <i data-lucide="arrow-right"
+                                    class="ml-2 h-3 w-3 transition-transform group-hover:translate-x-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" class="section-padding bg-gray-50 fade-in-section">
+            <div class="container-custom">
+                <div class="max-w-3xl mx-auto text-center mb-16">
+                    <span
+                        class="inline-block px-3 py-1 text-xs font-medium tracking-wider uppercase text-pink-700 bg-white rounded-full mb-4"
+                        data-i18n="events.tagline">Deepen Your Practice</span>
+                    <h2 class="text-3xl md:text-4xl font-medium mb-6" data-i18n="events.title">Upcoming Events &
+                        Retreats</h2>
+                    <p class="text-lg text-gray-500" data-i18n="events.description">Join us for special workshops and
+                        immersive retreats designed to expand your knowledge and rejuvenate your spirit.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Event 1 -->
+                    <div
+                        class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md flex flex-col">
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="https://bookretreats.com/cdn-cgi/image/width=1200,quality=65,f=auto,sharpen=1,fit=cover,gravity=auto/assets/photo/retreat/0m/29k/29132/p_1142181/1000_1692081290.jpg"
+                                alt="Yoga Retreat"
+                                class="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105">
+                            <button
+                                class="like-button absolute bottom-4 left-4 bg-white/70 backdrop-blur-sm p-2 rounded-full text-gray-600 hover:text-pink-500 focus:outline-none z-10">
+                                <i data-lucide="heart" class="h-5 w-5"></i>
+                            </button>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <p class="text-sm text-pink-500 mb-2 font-medium">October 15-18, 2025</p>
+                            <h3 class="text-xl font-medium mb-3" data-i18n="events.event1.title">Autumn Rejuvenation
+                                Retreat</h3>
+                            <p class="text-gray-700 mb-5 flex-grow" data-i18n="events.event1.description">A 4-day
+                                immersive retreat in the Estonian countryside. Deepen your practice with daily yoga,
+                                meditation, and healthy vegetarian meals.</p>
+                            <div class="mt-auto flex flex-col sm:flex-row items-center gap-3">
+                                <a href="#contact"
+                                    class="w-full text-center px-6 py-3 bg-gray-800 text-white font-medium rounded-md hover:bg-gray-700 transition-colors"
+                                    data-i18n="events.register_button">Register Now</a>
+                                <button
+                                    class="event-details-button w-full text-center px-6 py-3 border border-gray-300 text-gray-700 font-medium rounded-md hover:bg-gray-200 transition-colors"
+                                    data-i18n="events.learn_more_button">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Event 2 -->
+                    <div
+                        class="bg-white rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md flex flex-col">
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="https://www.playpausebe.com/wp-content/uploads/2022/10/Mastering-Inversion-Yoga-Poses-A-Guide-to-Headstand.webp"
+                                alt="Inversion Workshop"
+                                class="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105">
+                            <button
+                                class="like-button absolute bottom-4 left-4 bg-white/70 backdrop-blur-sm p-2 rounded-full text-gray-600 hover:text-pink-500 focus:outline-none z-10">
+                                <i data-lucide="heart" class="h-5 w-5"></i>
+                            </button>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <p class="text-sm text-pink-500 mb-2 font-medium">November 5, 2025</p>
+                            <h3 class="text-xl font-medium mb-3" data-i18n="events.event2.title">Mastering Inversions
+                                Workshop</h3>
+                            <p class="text-gray-700 mb-5 flex-grow" data-i18n="events.event2.description">Join Mia
+                                Johnson to build the strength and confidence to master headstands, handstands, and other
+                                inversions safely.</p>
+                            <div class="mt-auto flex flex-col sm:flex-row items-center gap-3">
+                                <a href="#contact"
+                                    class="w-full text-center px-6 py-3 bg-gray-800 text-white font-medium rounded-md hover:bg-gray-700 transition-colors"
+                                    data-i18n="events.register_button">Register Now</a>
+                                <button
+                                    class="event-details-button w-full text-center px-6 py-3 border border-gray-300 text-gray-700 font-medium rounded-md hover:bg-gray-200 transition-colors"
+                                    data-i18n="events.learn_more_button">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Words from Our Community Section -->
+        <section id="community-words" class="section-padding bg-white fade-in-section">
+            <div class="container-custom">
+                <div class="max-w-3xl mx-auto text-center mb-16">
+                    <span
+                        class="inline-block px-3 py-1 text-xs font-medium tracking-wider uppercase text-pink-700 bg-pink-100 rounded-full mb-4"
+                        data-i18n="community.tagline">Community</span>
+                    <h2 class="text-3xl md:text-4xl font-medium mb-6" data-i18n="community.title">Words from Our
+                        Community</h2>
+                    <p class="text-lg text-gray-500" data-i18n="community.description">Hear what our students have to
+                        say about their journey with us.</p>
+
+                    <!-- Overall Rating -->
+                    <div class="mt-8 flex flex-col items-center">
+                        <div class="flex items-center justify-center mb-2">
+                            <!-- Star Ratings -->
+                            <div class="flex items-center space-x-1">
+                                <i data-lucide="star" class="h-6 w-6 text-yellow-500 fill-yellow-500"></i>
+                                <i data-lucide="star" class="h-6 w-6 text-yellow-500 fill-yellow-500"></i>
+                                <i data-lucide="star" class="h-6 w-6 text-yellow-500 fill-yellow-500"></i>
+                                <i data-lucide="star" class="h-6 w-6 text-yellow-500 fill-yellow-500"></i>
+                                <i data-lucide="star" class="h-6 w-6 text-yellow-500 fill-yellow-500"></i>
+                            </div>
+                            <span class="ml-3 text-3xl font-bold text-gray-800">5.0</span>
+                        </div>
+                        <p class="text-gray-600 text-sm mb-4">GoYoga Ashtanga Yoga Shala • Narva mnt 7D, 10117 Tallinn
+                        </p>
+                        <div class="flex items-center space-x-4">
+                            <a href="#" class="inline-flex items-center text-sm text-gray-600 hover:text-blue-600">
+                                <i data-lucide="star" class="h-4 w-4 mr-1 text-blue-500 fill-blue-500"></i>
+                                <span>Google Reviews</span>
+                            </a>
+                            <a href="#" class="inline-flex items-center text-sm text-gray-600 hover:text-blue-600">
+                                <i data-lucide="star" class="h-4 w-4 mr-1 text-blue-500 fill-blue-500"></i>
+                                <span>Facebook Reviews</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reviews Carousel -->
+                <div class="relative max-w-6xl mx-auto">
+                    <!-- Carousel Container -->
+                    <div class="reviews-carousel overflow-hidden">
+                        <div id="reviews-track" class="flex transition-transform duration-500 ease-in-out">
+                            <!-- Reviews will be injected here by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Navigation Buttons -->
+                    <button id="prev-review"
+                        class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-6 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-shadow z-10">
+                        <i data-lucide="chevron-left" class="h-6 w-6 text-gray-700"></i>
+                    </button>
+                    <button id="next-review"
+                        class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-6 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-shadow z-10">
+                        <i data-lucide="chevron-right" class="h-6 w-6 text-gray-700"></i>
+                    </button>
+
+                    <!-- Dots Indicator -->
+                    <div id="review-dots" class="flex justify-center mt-8 space-x-2">
+                        <!-- Dots will be injected here by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Leave Review Button -->
+                <div class="text-center mt-12">
+                    <button id="leave-review-button"
+                        class="px-8 py-3 bg-gray-800 text-white font-medium rounded-md hover:bg-gray-700 transition-colors shadow-md"
+                        data-i18n="community.leave_review_button">
+                        Leave a Review
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instagram Section -->
+        <section id="community" class="section-padding bg-gray-50 fade-in-section">
+            <div class="container-custom">
+                <div class="max-w-3xl mx-auto text-center mb-12">
+                    <span
+                        class="inline-block px-3 py-1 text-xs font-medium tracking-wider uppercase text-pink-700 bg-white rounded-full mb-4"
+                        data-i18n="instagram.tagline">Community</span>
+                    <h2 class="text-3xl md:text-4xl font-medium mb-4" data-i18n="instagram.title">Follow Our Journey
+                    </h2>
+                    <p class="text-lg text-gray-500 mb-6" data-i18n="instagram.description">See snapshots of our daily
+                        practice, community events, and moments of peace. Follow us on Instagram <a href="#"
+                            class="text-pink-600 font-semibold hover:underline">@goyoga.ee</a>.</p>
+                </div>
+            </div>
+            <div
+                class="slider-container relative w-full overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+                <div class="slider-track flex w-max">
+                    <!-- Posts injected by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding bg-white fade-in-section">
+            <div class="container-custom">
+                <div class="max-w-3xl mx-auto text-center mb-16">
+                    <span
+                        class="inline-block px-3 py-1 text-xs font-medium tracking-wider uppercase text-pink-700 bg-pink-100 rounded-full mb-4"
+                        data-i18n="contact.tagline">Contact Us</span>
+                    <h2 class="text-3xl md:text-4xl font-medium mb-6" data-i18n="contact.title">Get In Touch</h2>
+                    <p class="text-lg text-gray-500" data-i18n="contact.description">If you have questions about our
+                        classes, pricing, or anything else, we're here to help.</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    <div>
+                        <h3 class="text-2xl font-medium mb-6" data-i18n="contact.form.title">Send Us a Message</h3>
+                        <form id="contact-form" class="space-y-5">
+                            <div>
+                                <label for="name" class="block text-sm font-medium mb-2"
+                                    data-i18n="contact.form.name">Your Name</label>
+                                <input type="text" id="name" name="name"
+                                    class="w-full px-4 py-3 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500"
+                                    required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium mb-2"
+                                    data-i18n="contact.form.email">Email Address</label>
+                                <input type="email" id="email" name="email"
+                                    class="w-full px-4 py-3 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500"
+                                    required>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium mb-2"
+                                    data-i18n="contact.form.message">Your Message</label>
+                                <textarea id="message" name="message" rows="5"
+                                    class="w-full px-4 py-3 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500"
+                                    required></textarea>
+                            </div>
+                            <button type="submit"
+                                class="inline-flex items-center px-6 py-3 bg-gray-800 text-white font-medium rounded-md hover:bg-gray-700 transition-colors"
+                                data-i18n="contact.form.send_button">
+                                <i data-lucide="send" class="h-4 w-4 mr-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-medium mb-6" data-i18n="contact.info.title">Studio Information</h3>
+                        <div class="space-y-8">
+                            <div>
+                                <div class="flex">
+                                    <i data-lucide="map-pin" class="h-6 w-6 text-pink-500 mr-4 flex-shrink-0"></i>
+                                    <div>
+                                        <h4 class="font-medium mb-2" data-i18n="contact.info.location">Location</h4>
+                                        <a href="https://www.google.com/maps/search/?api=1&query=Narva+mnt+7D,+Tallinn"
+                                            target="_blank" class="hover:text-pink-600">
+                                            <p>Narva mnt 7D, 3rd floor<br>Tallinn, Estonia</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="mt-4 pl-10 flex flex-wrap gap-2">
+                                    <button id="parking-button"
+                                        class="flex items-center text-sm text-gray-600 hover:text-pink-600 bg-gray-100 px-3 py-1 rounded-full"><i
+                                            data-lucide="car" class="h-4 w-4 mr-2"></i><span
+                                            data-i18n="contact.info.parking">Parking</span></button>
+                                    <button id="transport-button"
+                                        class="flex items-center text-sm text-gray-600 hover:text-pink-600 bg-gray-100 px-3 py-1 rounded-full"><i
+                                            data-lucide="bus" class="h-4 w-4 mr-2"></i><span
+                                            data-i18n="contact.info.transport">Transport</span></button>
+                                    <a href="https://www.google.com/maps/dir/?api=1&destination=Narva+mnt+7D,+Tallinn"
+                                        target="_blank"
+                                        class="flex items-center text-sm text-gray-600 hover:text-pink-600 bg-gray-100 px-3 py-1 rounded-full">
+                                        <i data-lucide="navigation" class="h-4 w-4 mr-2"></i><span
+                                            data-i18n="contact.info.directions">Directions</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="flex"><i data-lucide="clock"
+                                    class="h-6 w-6 text-pink-500 mr-4 flex-shrink-0"></i>
+                                <div>
+                                    <h4 class="font-medium mb-2" data-i18n="contact.info.hours">Opening Hours</h4>
+                                    <p>Mon-Fri: 05:30 - 20:30<br>Sat: 07:30 - 14:00</p>
+                                </div>
+                            </div>
+                            <div class="flex"><i data-lucide="phone"
+                                    class="h-6 w-6 text-pink-500 mr-4 flex-shrink-0"></i>
+                                <div>
+                                    <h4 class="font-medium mb-2" data-i18n="contact.info.phone">Phone</h4>
+                                    <p><a href="tel:+3725512345" class="hover:text-pink-600">+372 551 2345</a></p>
+                                </div>
+                            </div>
+                            <div class="flex"><i data-lucide="mail"
+                                    class="h-6 w-6 text-pink-500 mr-4 flex-shrink-0"></i>
+                                <div>
+                                    <h4 class="font-medium mb-2" data-i18n="contact.info.email">Email</h4>
+                                    <p><a href="mailto:info@goyoga.ee" class="hover:text-pink-600">info@goyoga.ee</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-16 pb-10">
+        <div class="container-custom">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
+                <div>
+                    <h3 class="text-2xl font-serif mb-5">GoYoga.ee</h3>
+                    <p class="text-gray-300 mb-6 max-w-xs" data-i18n="footer.description">Traditional Ashtanga yoga in
+                        the heart of the city. Join our community of dedicated practitioners.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="instagram"
+                                class="h-5 w-5"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="facebook"
+                                class="h-5 w-5"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="youtube"
+                                class="h-5 w-5"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="twitter"
+                                class="h-5 w-5"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-xl font-medium mb-5" data-i18n="footer.quick_links">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-300 hover:text-white" data-i18n="nav.home">Home</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-white" data-i18n="nav.about">About</a></li>
+                        <li><a href="#schedule" class="text-gray-300 hover:text-white"
+                                data-i18n="nav.schedule">Schedule</a></li>
+                        <li><a href="#pricing" class="text-gray-300 hover:text-white"
+                                data-i18n="nav.pricing">Pricing</a></li>
+                        <li><a href="#teachers" class="text-gray-300 hover:text-white"
+                                data-i18n="nav.teachers">Teachers</a></li>
+                        <li><a href="#events" class="text-gray-300 hover:text-white" data-i18n="nav.events">Events</a>
+                        </li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-white"
+                                data-i18n="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-medium mb-5" data-i18n="footer.resources">Resources</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-300 hover:text-white" data-i18n="footer.blog">Blog</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white"
+                                data-i18n="footer.workshops">Workshops</a></li>
+                        <li><a href="faq.html" class="hover:text-pink-600 transition-colors"
+                                data-i18n="footer.faq">FAQ</a></li>
+                        <li><a href="rent.html" class="hover:text-pink-600 transition-colors"
+                                data-i18n="footer.rent">Studio Rental</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-medium mb-5" data-i18n="footer.newsletter">Newsletter</h4>
+                    <p class="text-gray-300 mb-4" data-i18n="footer.newsletter_description">Join our newsletter to
+                        receive updates about workshops and events.</p>
+                    <form><input type="email" placeholder="Your email"
+                            class="w-full px-4 py-3 rounded-md bg-gray-700 border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-pink-500"
+                            data-i18n-placeholder="footer.email_placeholder"><button type="submit"
+                            class="w-full mt-2 px-4 py-3 bg-pink-600 text-white font-medium rounded-md hover:bg-pink-700"
+                            data-i18n="footer.subscribe_button">Subscribe</button></form>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-sm text-gray-400">
+                <p data-i18n="footer.copyright">© 2025 GoYoga.ee. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript Logic -->
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
