@@ -56,32 +56,7 @@ const teachersDetailData = {
             highlights: ["Kliininen ravitsemusterapeutti", "Lasten ja nuorten ravitsemus", "Joogan ja hyvinvoinnin edistäjä"]
         }
     },
-    keiu: {
-        en: {
-            name: "Keiu Grossberg",
-            role: "Ashtanga Teacher",
-            quote: "Let the breath lead the way; the movement is just its shadow.",
-            bio: "Keiu is known for her rhythmic and focused Mysore-style teaching. She believes in the therapeutic power of the primary series and guides students with precision and care.",
-            philosophy: "The shala is a sanctuary for self-discovery. I aim to create a space where students feel safe to explore their limits and find their inner strength.",
-            highlights: ["Traditional Mysore Method", "Breath-centric teaching", "Supportive environment"]
-        },
-        et: {
-            name: "Keiu Grossberg",
-            role: "Ashtanga õpetaja",
-            quote: "Lase hingamisel teed näidata; liikumine on vaid selle vari.",
-            bio: "Keiu on tuntud oma rütmilise ja keskendunud Mysore-stiilis õpetamise poolest. Ta usub esimese seeria teraapilisse jõudu ja juhendab õpilasi täpsuse ja hoolega.",
-            philosophy: "Shala on eneseleidmise varjupaik. Minu eesmärk on luua ruum, kus õpilased tunnevad end turvaliselt oma piire uurides ja sisemist jõudu leides.",
-            highlights: ["Traditsiooniline Mysore meetod", "Hingamiskeskne õpetamine", "Toetav keskkond"]
-        },
-        fi: {
-            name: "Keiu Grossberg",
-            role: "Ashtanga-opettaja",
-            quote: "Anna hengityksen näyttää tietä; liike on vain sen varjo.",
-            bio: "Keiu tunnetaan rytmisestä ja keskittyneestä Mysore-tyylin opetuksestaan. Hän uskoo ensimmäisen sarjan terapeuttiseen voimaan ja ohjaa oppilaita tarkkuudella ja huolenpidolla.",
-            philosophy: "Shala on itsensä löytämisen turvapaikka. Tavoitteeni on luoda tila, jossa oppilaat tuntevat olonsa turvalliseksi tutkiessaan rajojaan ja löytäessään sisäisen voimansa.",
-            highlights: ["Perinteinen Mysore-menetelmä", "Hengityskeskeinen opetus", "Tuettu ympäristö"]
-        }
-    },
+
     triin: {
         en: {
             name: "Triin Parro",
@@ -108,58 +83,8 @@ const teachersDetailData = {
             highlights: ["FAF Persona Trainer", "Ravitsemus ja terveysterapia", "BodyART-ohjaaja"]
         }
     },
-    dian: {
-        en: {
-            name: "Dian Jarvenkyla",
-            role: "Vinyasa Flow Teacher",
-            quote: "Flow is the state where time vanishes and only the breath remains.",
-            bio: "Dian sequences classes that are both creative and grounding. Her Vinyasa flow classes are designed to build heat, release tension, and reconnect with the simple joy of movement.",
-            philosophy: "Yoga should feel like a dance between the breath and the body. I encourage students to find their unique rhythm and flow with ease.",
-            highlights: ["Creative Vinyasa Sequencing", "Pranayama enthusiast", "Dynamic movement specialist"]
-        },
-        et: {
-            name: "Dian Jarvenkyla",
-            role: "Vinyasa Flow õpetaja",
-            quote: "Voog on seisund, kus aeg kaob ja jääb vaid hingamine.",
-            bio: "Dian paneb kokku seansse, mis on nii loovad kui ka maandavad. Tema Vinyasa voo tunnid on loodud selleks, et luua soojust, vabastada pinget ja luua uuesti ühendus liikumise lihtsa rõõmuga.",
-            philosophy: "Jooga peaks tunduma nagu tants hingamise ja keha vahel. Ma julgustan õpilasi leidma oma ainulaadset rütmi ja voolama kergusega.",
-            highlights: ["Loov Vinyasa järjestamine", "Pranayama entusiast", "Dünaamilise liikumise spetsialist"]
-        },
-        fi: {
-            name: "Dian Jarvenkyla",
-            role: "Vinyasa Flow -opettaja",
-            quote: "Virtaus on tila, jossa aika katoaa ja jäljelle jää vain hengitys.",
-            bio: "Dian kokoaa tunteja, jotka ovat sekä luovia että maadoittavia. Hänen Vinyasa flow -tuntinsa on suunniteltu luomaan lämpöä, vapauttamaan jännitystä ja löytämään jälleen liikkeen yksinkertainen ilo.",
-            philosophy: "Joogan tulisi tuntua tanssilta hengityksen ja kehon välillä. Kannustan oppilaita löytämään oman aikun rütminsä ja virtaamaan vaivattomasti.",
-            highlights: ["Luova Vinyasa-sarjoittaminen", "Pranayama-harrastaja", "Dynaamisen liikkeen asiantuntija"]
-        }
-    },
-    katlin: {
-        en: {
-            name: "Kätlin Epner",
-            role: "Yin Yoga Specialist",
-            quote: "In stillness, we find the answers that chaos hides.",
-            bio: "Kätlin specializes in the meditative practice of Yin Yoga. By holding poses for longer durations, she guides students to reach the deeper connective tissues and cultivate a state of profound inner peace.",
-            philosophy: "Yin is the art of letting go. It's about surrendering to the present moment and allowing the body to open at its own pace.",
-            highlights: ["Myofascial Release focus", "Meditation guide", "Deep relaxation expert"]
-        },
-        et: {
-            name: "Kätlin Epner",
-            role: "Yin jooga spetsialist",
-            quote: "Vaikuses leiame vastused, mida kaos peidab.",
-            bio: "Kätlin on spetsialiseerunud Yin jooga meditatiivsele praktikale. Hoides poose kauem, juhendab ta õpilasi jõudma sügavamate sidekudedeni ja kündma sügavat sisemist rahu.",
-            philosophy: "Yin on lahtilaskmise kunst. See on alistumine praegusele hetkele ja laskmine kehal avaneda oma tempos.",
-            highlights: ["Müofastsiaalse vabastamise fookus", "Meditatsiooni juhendaja", "Sügava lõdvestuse ekspert"]
-        },
-        fi: {
-            name: "Kätlin Epner",
-            role: "Yin-joogan asiantuntija",
-            quote: "Hiljaisuudesta löydämme vastaukset, jotka kaaos piilottaa.",
-            bio: "Kätlin on erikoistunut Yin-joogan meditatiiviseen harjoitukseen. Pitämällä asentoja pidempään hän ohjaa oppilaita tavoittamaan syvemmät sidekudokset ja viljelemään syvää sisäistä rauhaa.",
-            philosophy: "Yin on irti päästämisen taitoa. Kyse on antautumisesta nykyhetkelle ja kehon sallimisesta avautua omaan tahtiinsa.",
-            highlights: ["Myofascial Release -painotus", "Meditaatio-opas", "Syvän rentoutumisen asiantuntija"]
-        }
-    },
+
+
     kaia: {
         en: {
             name: "Kaia Karjatse",

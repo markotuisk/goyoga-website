@@ -10,10 +10,7 @@ const translationsData = {
         "teachers.tagline": "Our Teachers", "teachers.title": "Experience & Wisdom", "teachers.description": "A diverse team of practitioners dedicated to your path of yoga and wellness.",
         "teachers.raili.title": "Founder | Ashtanga", "teachers.raili.description": "Bringing authentic Ashtanga practice to Tallinn with decades of experience.",
         "teachers.victoria.title": "Ashtanga | Nutritional Therapist", "teachers.victoria.description": "Focusing on conscious eating and the traditional Ashtanga method.",
-        "teachers.keiu.title": "Ashtanga Yoga", "teachers.keiu.description": "Guiding students through the rhythmic flow of breath and movement.",
         "teachers.triin.title": "Strength & Holistic Health", "teachers.triin.description": "Specializing in strength training and personalized wellness journeys.",
-        "teachers.dian.title": "Vinyasa Flow", "teachers.dian.description": "Creating dynamic and creative sequences for all levels.",
-        "teachers.katlin.title": "Yin Yoga Specialist", "teachers.katlin.description": "Holding space for deep release and meditative stillness.",
         "teachers.kaia.title": "60+ Yoga | Sound Therapy", "teachers.kaia.description": "Gentle movement and healing vibrations for all stages of life.",
         "teachers.edith.title": "Qigong | Energy Work", "teachers.edith.description": "Working with meridians and the Radiant Lotus Qigong tradition.",
         "teachers.marit.title": "Meditations | Cacao Ceremonies", "teachers.marit.description": "Opening hearts through sacred rituals and deep presence.",
@@ -37,10 +34,7 @@ const translationsData = {
         "teachers.tagline": "Meie õpetajad", "teachers.title": "Kogemus ja tarkus", "teachers.description": "Mitmekülgne meeskond praktikuid, kes on pühendunud sinu jooga- ja heaolu teekonnale.",
         "teachers.raili.title": "Asutaja | Ashtanga", "teachers.raili.description": "Toob Tallinna autentse Ashtanga praktika aastakümnete pikkuse kogemusega.",
         "teachers.victoria.title": "Ashtanga | Toitumisterapeut", "teachers.victoria.description": "Keskendub teadlikule toitumisele ja traditsioonilisele Ashtanga meetodile.",
-        "teachers.keiu.title": "Ashtanga jooga", "teachers.keiu.description": "Juhendab õpilasi läbi hingamise ja liikumise rütmilise voo.",
         "teachers.triin.title": "Jõud ja holistiline tervis", "teachers.triin.description": "Spetsialiseerunud jõutreeningule ja individuaalsetele heaolu teekondadele.",
-        "teachers.dian.title": "Vinyasa Flow", "teachers.dian.description": "Loob dünaamilisi ja loovaid seansse kõikidele tasemetele.",
-        "teachers.katlin.title": "Yin jooga spetsialist", "teachers.katlin.description": "Loob ruumi sügavaks lõdvestumiseks ja meditatiivseks vaikuseks.",
         "teachers.kaia.title": "60+ jooga | Heliteraapia", "teachers.kaia.description": "Õrn liikumine ja tervendavad vibratsioonid kõikidele eluetappidele.",
         "teachers.edith.title": "Qigong | Energiatöö", "teachers.edith.description": "Töö meridiaanide ja Särava Lootose Qigong traditsiooniga.",
         "teachers.marit.title": "Meditatsioonid | Kakaotseremooniad", "teachers.marit.description": "Avab südameid läbi pühade rituaalide ja sügava kohalolu.",
@@ -67,10 +61,7 @@ const translationsData = {
         "teachers.tagline": "Opettajamme", "teachers.title": "Kokemus ja viisaus", "teachers.description": "Monipuolinen tiimi harjoittajia, jotka ovat omistautuneet jooga- ja hyvinvointimatkallesi.",
         "teachers.raili.title": "Perustaja | Ashtanga", "teachers.raili.description": "Tuo aitoa Ashtanga-harjoitusta Tallinnaan vuosikymmenten kokemuksella.",
         "teachers.victoria.title": "Ashtanga | Ravintoterapeutti", "teachers.victoria.description": "Keskittyy tietoiseen syömiseen ja perinteiseen Ashtanga-menetelmään.",
-        "teachers.keiu.title": "Ashtanga-jooga", "teachers.keiu.description": "Ohjaa oppilaita hengityksen ja liikkeen rytmikkäässä virrassa.",
         "teachers.triin.title": "Voima ja holistinen terveys", "teachers.triin.description": "Erikoistunut voimaharjoitteluun ja yksilöllisiin hyvinvointimatkoihin.",
-        "teachers.dian.title": "Vinyasa Flow", "teachers.dian.description": "Luo dynaamisia ja luovia sarjoja kaikille tasoille.",
-        "teachers.katlin.title": "Yin-joogan asiantuntija", "teachers.katlin.description": "Luo tilaa syvälle vapautumiselle ja meditatiiviselle hiljaisuudelle.",
         "teachers.kaia.title": "60+ jooga | Ääniterapia", "teachers.kaia.description": "Lempeää liikettä ja parantavia värähtelyjä elämän kaikkiin vaiheisiin.",
         "teachers.edith.title": "Qigong | Energiatyö", "teachers.edith.description": "Työskentely meridiaanien ja Radiant Lotus Qigong -perinteen parissa.",
         "teachers.marit.title": "Meditaatiot | Kaakaoseremoniat", "teachers.marit.description": "Sydänten avaaminen pyhien rituaalien ja syvän läsnäolon kautta.",
@@ -100,16 +91,260 @@ const reviewsData = [
 const teachersData = {
     raili: { "name": "Raili Maripuu", "title": "Founder & Ashtanga Teacher", "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b", "socials": { "instagram": "https://www.instagram.com/raili.yoga/", "facebook": "https://www.facebook.com/raili.yoga" } },
     victoria: { "name": "Victoria Palusaar", "title": "Ashtanga | Nutritional Therapist", "image": "https://images.unsplash.com/photo-1599447421416-3414500d18a5", "socials": { "instagram": "https://www.instagram.com/vicky_pa/", "facebook": "https://www.facebook.com/victoria.palusaar" } },
-    keiu: { "name": "Keiu Grossberg", "title": "Ashtanga Yoga Teacher", "image": "https://images.unsplash.com/photo-1552196563-55cd4e45efb3", "socials": { "instagram": "#", "facebook": "#" } },
     triin: { "name": "Triin Parro", "title": "Strength & Holistic Health", "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b", "socials": { "instagram": "https://www.instagram.com/triin.p/", "facebook": "https://www.facebook.com/fitmindoy/" } },
-    dian: { "name": "Dian Jarvenkyla", "title": "Vinyasa Flow Teacher", "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773", "socials": { "instagram": "#", "facebook": "#" } },
-    katlin: { "name": "Kätlin Epner", "title": "Yin Yoga Specialist", "image": "assets/images/katlin.png", "socials": { "instagram": "#", "facebook": "#" } },
     kaia: { "name": "Kaia Karjatse", "title": "60+ Yoga | Sound Therapy", "image": "assets/images/kaia.png", "socials": { "instagram": "#", "facebook": "#" } },
     edith: { "name": "Edith Tiitsaar", "title": "Qigong | Energy Work", "image": "https://images.unsplash.com/photo-1545205597-3d9d02c29597", "socials": { "instagram": "#", "facebook": "#" } },
     marit: { "name": "Marit Tuisk", "title": "Meditations | Cacao Ceremonies", "image": "assets/images/marit.png", "socials": { "instagram": "https://www.instagram.com/casa_rituals/", "facebook": "https://www.facebook.com/casarituals" } },
     david: { "name": "David Lepp", "title": "Sound Baths | Yoga Nidra", "image": "https://images.unsplash.com/photo-1514533212735-5df27d970db0", "socials": { "instagram": "https://www.instagram.com/casa_rituals/", "facebook": "https://www.facebook.com/casarituals" } }
 };
 window.teachersData = teachersData;
+
+const classesData = {
+    ashtanga: {
+        icon: "activity", // lucid icon name
+        image: "https://images.unsplash.com/photo-1599447421416-3414500d18a5",
+        teacherIds: ["raili", "victoria"],
+        translations: {
+            en: {
+                title: "Ashtanga Yoga",
+                tagline: "A dynamic, moving meditation building strength and focus.",
+                description: "Ashtanga Yoga is a traditional system of yoga that synchronizes breath with a progressive series of postures. This process produces intense internal heat and a profuse, purifying sweat that detoxifies muscles and organs. The result is improved circulation, a light and strong body, and a calm mind.",
+                audience: "Ideal for those seeking a disciplined, physically demanding practice that builds strength, flexibility, and mental focus. Suitable for beginners who are up for a challenge, as well as prolonged practitioners.",
+                benefits: [
+                    { title: "Strength & Flexibility", description: "Builds lean muscle and deep flexibility simultaneously." },
+                    { title: "Detoxification", description: "Internal heat purifies the body through sweat." },
+                    { title: "Mental Clarity", description: "Focus on breath and drishti (gaze) calms the mind." }
+                ],
+                faqs: [
+                    { question: "Do I need to be flexible?", answer: "Not at all. Flexibility is a result of the practice, not a prerequisite." },
+                    { question: "Is it suitable for beginners?", answer: "Yes, our teachers adjust the practice to your level." }
+                ]
+            },
+            et: {
+                title: "Ashtanga Jooga",
+                tagline: "Dünaamiline liikuv meditatsioon, mis kasvatab jõudu ja fookust.",
+                description: "Ashtanga jooga on traditsiooniline joogasüsteem, mis sünkroniseerib hingamise progresseeruva asendite seeriaga. See protsess toodab intensiivset sisemist soojust ja puhastavat higistamist, mis detoksifitseerib lihaseid ja elundeid.",
+                audience: "Ideaalne neile, kes otsivad distsiplineeritud ja füüsilist praktikat. Sobib nii algajatele, kes soovivad väljakutset, kui ka kogenud praktiseerijatele.",
+                benefits: [
+                    { title: "Jõud ja painduvus", description: "Ehitab samaaegselt lihast ja sügavat painduvust." },
+                    { title: "Puhastumine", description: "Sisemine kuumus puhastab keha." },
+                    { title: "Vaimne selgus", description: "Fookus hingamisel rahustab meelt." }
+                ],
+                faqs: [
+                    { question: "Kas ma pean olema painduv?", answer: "Sugugi mitte. Painduvus on praktika tulemus." },
+                    { question: "Kas see sobib algajatele?", answer: "Jah, õpetajad kohandavad praktikat vastavalt sinule." }
+                ]
+            },
+            fi: {
+                title: "Ashtanga Jooga",
+                tagline: "Dynaaminen liikkuva meditaatio.",
+                description: "Ashtanga-jooga on perinteinen järjestelmä, joka synkronoi hengityksen asentojen kanssa.",
+                audience: "Sopii niille, jotka etsivät fyysistä ja kurinalaista harjoitusta.",
+                benefits: [
+                    { title: "Voima & Joustavuus", description: "Kehittää voimaa ja liikkuvuutta." },
+                    { title: "Puhdistautuminen", description: "Hikoilu puhdistaa kehoa." },
+                    { title: "Mielen selkeys", description: "Keskittyminen rauhoittaa mieltä." }
+                ],
+                faqs: [
+                    { question: "Täytyykö minun olla notkea?", answer: "Ei tarvitse. Notkeus tulee harjoittelun myötä." }
+                ]
+            }
+        }
+    },
+    strength: {
+        icon: "dumbbell",
+        image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b",
+        teacherIds: ["triin"],
+        translations: {
+            en: {
+                title: "Strength",
+                tagline: "Functional strength training for a balanced body.",
+                description: "Our Strength classes focus on building functional muscle, improving core stability, and enhancing overall body mechanics. These classes complement your yoga practice by identifying and strengthening weak links.",
+                audience: "Anyone looking to increase physical strength, improve posture, or prevent injuries. Great for yogis wanting to add resistance training.",
+                benefits: [
+                    { title: "Functional Power", description: "Strength that translates to daily life." },
+                    { title: "Injury Prevention", description: "Stabilizes joints and strengthens connective tissue." },
+                    { title: "Core Stability", description: "Deep work on the body's powerhouse." }
+                ],
+                faqs: [
+                    { question: "Do we use weights?", answer: "Yes, we use kettlebells, dumbbells, and bodyweight." }
+                ]
+            },
+            et: {
+                title: "Jõutrenn",
+                tagline: "Funktsionaalne jõutrenn tasakaalustatud kehale.",
+                description: "Meie jõutrennid keskenduvad funktsionaalse lihase ehitamisele ja kerelihaste stabiilsusele.",
+                audience: "Kõigile, kes soovivad suurendada füüsilist jõudu või parandada rühti.",
+                benefits: [
+                    { title: "Funktsionaalne jõud", description: "Jõud, mis toetab igapäevaelu." },
+                    { title: "Vigastuste ennetamine", description: "Stabiliseerib liigeseid." },
+                    { title: "Kere stabiilsus", description: "Sügav töö kerelihastega." }
+                ],
+                faqs: [
+                    { question: "Kas kasutame raskusi?", answer: "Jah, kasutame sangpomme ja hantleid." }
+                ]
+            },
+            fi: {
+                title: "Voimaharjoittelu",
+                tagline: "Toiminnallista voimaa.",
+                description: "Keskittyy lihasvoiman ja kehonhallinnan kehittämiseen.",
+                audience: "Kaikille, jotka haluavat lisätä voimaa.",
+                benefits: [
+                    { title: "Voima", description: "Lisää fyysistä suorituskykyä." },
+                    { title: "Vammojen ehkäisy", description: "Vahvistaa tukilihaksia." }
+                ],
+                faqs: [
+                    { question: "Käytämmekö painoja?", answer: "Kyllä, käytämme kahvakuulia ja käsipainoja." }
+                ]
+            }
+        }
+    },
+    senior: {
+        icon: "heart",
+        image: "assets/images/kaia.png",
+        teacherIds: ["kaia"],
+        translations: {
+            en: {
+                title: "60+ Yoga",
+                tagline: "Gentle movement for vitality and longevity.",
+                description: "Designed specifically for bodies 60 and over, this class focuses on gentle movement, joint mobility, and balance. It's a safe space to maintain physical health and social connection.",
+                audience: "Seniors looking to stay active, improve balance, and enjoy a supportive community.",
+                benefits: [
+                    { title: "Mobility", description: "Keeps joints lubricated and moving freely." },
+                    { title: "Balance", description: "Reduces risk of falls by strengthening stabilizers." },
+                    { title: "Community", description: "Connect with like-minded peers." }
+                ],
+                faqs: [
+                    { question: "Is it safe if I have injuries?", answer: "Yes, the teacher adapts all poses." }
+                ]
+            },
+            et: {
+                title: "60+ Jooga",
+                tagline: "Õrn liikumine elujõu ja pikaealisuse heaks.",
+                description: "Spetsiaalselt 60+ vanusele loodud tund keskendub õrnale liikumisele, liigeste liikuvusele ja tasakaalule.",
+                audience: "Seenioridele, kes soovivad püsida aktiivsed.",
+                benefits: [
+                    { title: "Liikuvus", description: "Hoiab liigesed tervena." },
+                    { title: "Tasakaal", description: "Vähendab kukkumisohtu." },
+                    { title: "Kogukond", description: "Suhtle eakaaslastega." }
+                ],
+                faqs: [
+                    { question: "Kas see on ohutu?", answer: "Jah, õpetaja kohandab asendeid vastavalt vajadusele." }
+                ]
+            },
+            fi: {
+                title: "60+ Jooga",
+                tagline: "Lempeää liikettä.",
+                description: "Suunniteltu erityisesti yli 60-vuotiaille.",
+                audience: "Senioreille.",
+                benefits: [
+                    { title: "Liikkuvuus", description: "Pitää nivelet vetreinä." },
+                    { title: "Tasapaino", description: "Parantaa tasapainoa." }
+                ],
+                faqs: [
+                    { question: "Onko se turvallista?", answer: "Kyllä, tunti on hyvin lempeä." }
+                ]
+            }
+        }
+    },
+    qigong: {
+        icon: "sun",
+        image: "https://images.unsplash.com/photo-1545205597-3d9d02c29597",
+        teacherIds: ["edith"],
+        translations: {
+            en: {
+                title: "Qigong",
+                tagline: "Cultivating energy through gentle flow.",
+                description: "Qigong (Meridiaanivõimlemine) involves coordinated body-posture and movement, breathing, and meditation used for the purposes of health, spirituality, and martial-arts training.",
+                audience: "Anyone seeking stress relief, better energy flow, and a meditative movement practice.",
+                benefits: [
+                    { title: "Energy Flow", description: "Unblocks stagnant energy (Qi)." },
+                    { title: "Stress Relief", description: "Calms the nervous system." },
+                    { title: "Mindfulness", description: "Deepens mind-body connection." }
+                ],
+                faqs: [
+                    { question: "What is the difference from Yoga?", answer: "Qigong focuses more on subtle energy flow and repetitive fluid movements." }
+                ]
+            },
+            et: {
+                title: "Qigong (Meridiaanivõimlemine)",
+                tagline: "Energia kasvatamine läbi õrna voo.",
+                description: "Qigong hõlmab koordineeritud kehaasendeid, liikumist, hingamist ja meditatsiooni tervise ja vaimsuse eesmärgil.",
+                audience: "Kõigile, kes otsivad stressileevendust ja paremat energiavoolu.",
+                benefits: [
+                    { title: "Energiavool", description: "Vabastab blokeerunud energia." },
+                    { title: "Stressileevendus", description: "Rahustab närvisüsteemi." },
+                    { title: "Teadlikkus", description: "Süvendab keha ja meele ühendust." }
+                ],
+                faqs: [
+                    { question: "Kuidas see erineb joogast?", answer: "Qigong keskendub peenematele energiatele ja voolavusele." }
+                ]
+            },
+            fi: {
+                title: "Qigong",
+                tagline: "Energian viljelyä.",
+                description: "Qigong yhdistää liikkeen, hengityksen ja meditaation.",
+                audience: "Kaikille stressinlievitystä etsiville.",
+                benefits: [
+                    { title: "Energia", description: "Parantaa virtausta." },
+                    { title: "Mielenrauha", description: "Vähentää stressiä." }
+                ],
+                faqs: [
+                    { question: "Miten eroaa joogasta?", answer: "Keskittyy enemmän energian virtaukseen." }
+                ]
+            }
+        }
+    },
+    soundbath: {
+        icon: "music",
+        image: "https://images.unsplash.com/photo-1514533212735-5df27d970db0",
+        teacherIds: ["kaia", "david"],
+        translations: {
+            en: {
+                title: "Sound Baths",
+                tagline: "Deep relaxation through healing vibrations.",
+                description: "A Sound Bath is a meditative experience where those in attendance are 'bathed' in sound waves. These waves are produced by various sources, including gongs, singing bowls, percussion, chimes, rattles, tanning forks, and even the human voice.",
+                audience: "Anyone looking for deep relaxation, stress relief, or a meditative experience without physical movement.",
+                benefits: [
+                    { title: "Deep Relaxation", description: "Promotes a state of deep rest." },
+                    { title: "Stress Reduction", description: "lowers cortisol levels." },
+                    { title: "Mental Clarity", description: "Helps clear the mind of chatter." }
+                ],
+                faqs: [
+                    { question: "Do I do yoga poses?", answer: "No, you typically lie down comfortably with blankets." }
+                ]
+            },
+            et: {
+                title: "Helirännakud",
+                tagline: "Sügav lõõgastus läbi tervendavate vibratsioonide.",
+                description: "Helirännak on meditatiivne kogemus, kus osalejad on 'supluses' helilainetes. Kasutatakse gonge, kausse ja muid instrumente.",
+                audience: "Kõigile, kes otsivad sügavat puhkust.",
+                benefits: [
+                    { title: "Sügav lõõgastus", description: "Viib sügavasse puhkeseisundisse." },
+                    { title: "Stressi vähendamine", description: "Alandab stressitaset." },
+                    { title: "Vaimne selgus", description: "Aitab meelt puhastada." }
+                ],
+                faqs: [
+                    { question: "Kas teeme joogaasendeid?", answer: "Ei, tavaliselt lamate mugavalt tekkide all." }
+                ]
+            },
+            fi: {
+                title: "Äänimaljakylvyt",
+                tagline: "Syvä rentoutuminen.",
+                description: "Meditatiivinen kokemus, jossa kylvetään äänessä.",
+                audience: "Kaikille rentoutumista etsiville.",
+                benefits: [
+                    { title: "Rentoutuminen", description: "Edistää syvää lepoa." },
+                    { title: "Stressinpoisto", description: "Vähentää stressiä." }
+                ],
+                faqs: [
+                    { question: "Teemmekö asanoita?", answer: "Ei, yleensä makaat mukavasti lattialla." }
+                ]
+            }
+        }
+    }
+};
+window.classesData = classesData;
 
 const pricingData = {
     single: { "title": "Single Session", "options": [{ "name": "1 session", "price": "18 €" }] },
