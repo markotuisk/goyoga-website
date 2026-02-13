@@ -80,8 +80,7 @@ function renderClassDetails(id, lang) {
     if (socialProofSection && socialProofGrid) {
         if (socialProof && socialProof.length > 0) {
             const renderCard = (item, hidden = false) => `
-                <div class="social-proof-card bg-gray-50 p-6 rounded-xl flex flex-col items-center text-center gap-4 shadow-sm hover:shadow-md transition-all duration-300 ${hidden ? 'hidden' : ''}" ${hidden ? 'data-hidden-card' : ''}>
-                    <img src="${item.image}" alt="${item.name}" class="w-16 h-16 rounded-full object-cover border-2 border-pink-100 flex-shrink-0" loading="lazy">
+                <div class="social-proof-card bg-gray-50 p-5 rounded-xl flex flex-col items-center text-center gap-3 shadow-sm hover:shadow-md transition-all duration-300 ${hidden ? 'hidden' : ''}" ${hidden ? 'data-hidden-card' : ''}>
                     <blockquote class="text-gray-600 italic text-sm leading-relaxed">"${item.quote}"</blockquote>
                     <div>
                         <div class="font-medium text-gray-900 text-sm">${item.name}</div>
