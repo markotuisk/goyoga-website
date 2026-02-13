@@ -93,6 +93,31 @@ function renderTeacherData(id, lang) {
 
     // Update Socials (if elements exist)
     // For now we use the placeholders in teacher.html, but we could update them dynamically
+
+    // Testimonials Section
+    const testimonialsSection = document.getElementById('teacher-testimonials-section');
+    const testimonialsGrid = document.getElementById('teacher-testimonials-grid');
+    const testimonialsName = document.getElementById('testimonials-teacher-name');
+    const testimonials = detail?.testimonials || [];
+
+    if (testimonialsSection && testimonialsGrid) {
+        if (testimonials.length > 0) {
+            if (testimonialsName) testimonialsName.textContent = name;
+            testimonialsGrid.innerHTML = testimonials.map(t => `
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-center mb-3">
+                        <i data-lucide="quote" class="h-5 w-5 text-pink-400 mr-2"></i>
+                        <h3 class="font-semibold text-gray-800">${t.title}</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">${t.text}</p>
+                </div>
+            `).join('');
+            testimonialsSection.classList.remove('hidden');
+            if (window.lucide) window.lucide.createIcons();
+        } else {
+            testimonialsSection.classList.add('hidden');
+        }
+    }
 }
 
 function updateTeacherSEO(id, lang) {

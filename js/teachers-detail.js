@@ -7,27 +7,123 @@ const teachersDetailData = {
     "raili-maripuu": {
         en: {
             name: "Raili Maripuu",
-            role: "Founder & Ashtanga Teacher",
-            quote: "Yoga is a mirror to the soul, a daily practice that reveals our true nature through the breath.",
-            bio: "Raili is the visionary behind GoYoga Tallinn. With over two decades of dedicated practice and teaching, she brings the authentic Ashtanga Vinyasa method to life. Her journey began in the traditional shalas of Mysore, India, and she has since dedicated her life to sharing the transformative power of the Eight Limbs.",
-            philosophy: "I believe that consistency is the key to transformation. The practice isn't about the perfect pose, but about the presence you bring to each moment on the mat.",
-            highlights: ["Mysore-Authorized Practice", "Over 10,000 hours teaching", "Dedicated to tradition"]
+            role: "Founder & Ashtanga Yoga Teacher",
+            quote: "Consistency is the key to transformation. The practice isn't about the perfect pose, but about the presence you bring to each moment on the mat.",
+            bio: `Raili Maripuu is a native Estonian based in the UK who has been practising yoga for over 20 years. She began her daily <a href="https://en.wikipedia.org/wiki/Ashtanga_(vinyasa)_yoga" target="_blank" class="text-pink-600 hover:text-pink-800 underline">Ashtanga Yoga</a> practice in 2009 and has been teaching for over 10 years.
+Her main teachers are <a href="https://www.linomiele.com/?pagina=ayri.php" target="_blank" class="text-pink-600 hover:text-pink-800 underline">Lino Miele</a> (Italy) and <a href="https://www.hamishhendry.com/" target="_blank" class="text-pink-600 hover:text-pink-800 underline">Hamish Hendry</a> (UK). Raili is one of Lino Miele's Recognised Teachers. In 2016, she completed an In-Depth Study under Lino's guidance and received a Diploma from the Ashtanga Yoga Research Institute in Rome.
+In 2016, Raili founded <a href="class.html?id=ashtanga-yoga" class="text-pink-600 hover:text-pink-800 underline">Ashtanga Estonia</a> — a traditional Ashtanga Yoga school in Tallinn. She developed a systematic and methodical training programme for assistant teachers at the shala, which she has been running annually since 2019.
+In the UK, Raili runs the Ashtanga Yoga programme at <a href="https://yogareading.co.uk" target="_blank" class="text-pink-600 hover:text-pink-800 underline">Yoga Reading</a> and teaches regular weekly classes at The Little Yoga Studio in Twyford.
+Raili teaches Ashtanga following the traditional method, known as <em>parampara</em> in Sanskrit, where the teacher passes knowledge directly to the student. Her teaching style is encouraging and supportive, helping students establish their individual daily practice.
+An entrepreneur and former dancer, Raili practises Ashtanga Yoga 5–6 times a week and teaches weekly in both Estonia and the UK. Since 2010, she has been making annual trips to India and Italy to assist her teacher, Lino Miele.`,
+            philosophy: "I believe that consistency is the key to transformation. The practice isn't about the perfect pose, but about the presence you bring to each moment on the mat. My role as a teacher is to create a supportive environment where every student can discover their own path through this ancient practice.",
+            highlights: [
+                "Lino Miele Recognised Teacher",
+                "Diploma from Ashtanga Yoga Research Institute, Rome (2016)",
+                "Founder of Ashtanga Estonia (2016)",
+                "20+ years of yoga practice",
+                "10+ years of teaching experience",
+                "Annual assistant to Lino Miele in India and Italy since 2010",
+                "Developer of assistant teacher training programme",
+                "Teaching in Estonia and the UK"
+            ],
+            testimonials: [
+                {
+                    title: "Expert and Empowering Guidance",
+                    text: "Students highlight her expert guidance in workshops, noting that she helps them develop a thorough understanding of sequence, breathing, and flow, particularly focusing on physical opening in the shoulders and hips."
+                },
+                {
+                    title: "High Standard of Traditional Teaching",
+                    text: "Reviewers at her studios often praise the high quality teaching and her individualised approach, which has helped them progress not just physically, but also in their personal understanding of yoga's broader scope."
+                },
+                {
+                    title: "Supportive and Welcoming Environment",
+                    text: "Even for absolute beginners, the atmosphere in her classes is described as focused and relaxed at the same time, with students feeling immediately impressed by the supportive community she fosters."
+                },
+                {
+                    title: "Holistic and Life-Changing Results",
+                    text: "Practitioners have noted that the passion for yoga she instills makes a sincere difference to their lives, leaving them feeling calm, energised, and even 2 inches taller after a session."
+                }
+            ]
         },
         et: {
             name: "Raili Maripuu",
-            role: "Asutaja & Ashtanga õpetaja",
-            quote: "Jooga on sielu peegel, igapäevane praktika, mis paljastab meie tõelise olemuse läbi hingamise.",
-            bio: "Raili on GoYoga Tallinn visionäär. Üle kahe aastakümne kestnud pühendunud praktika ja õpetamise kogemusega toob ta Tallinna autentse Ashtanga Vinyasa meetodi. Tema teekond algas India traditsioonilistes Mysore shalades ning sellest ajast peale on ta pühendanud oma elu Kaheksa Astme (Eight Limbs) transformatiivse väe jagamisele.",
-            philosophy: "Ma usun, et järjepidevus on muutuse võti. Praktika ei seisne täiuslikus poosis, vaid kohalolus, mille tood igasse hetke matil.",
-            highlights: ["Mysore-autoriseeritud praktika", "Üle 10 000 tunni õpetamist", "Pühendunud traditsioonid"]
+            role: "Asutaja ja Ashtanga Jooga Õpetaja",
+            quote: "Järjepidevus on muutuse võti. Praktika ei seisne täiuslikus poosis, vaid kohalolus, mille tood igasse hetke matil.",
+            bio: `Raili Maripuu on eestlanna, kes elab Ühendkuningriigis ja on praktiseerinud joogat üle 20 aasta. Ta alustas igapäevast Ashtanga jooga praktikat 2009. aastal ja on õpetanud üle 10 aasta.
+Tema peamised õpetajad on Lino Miele (Itaalia) ja Hamish Hendry (Ühendkuningriik). Raili on üks Lino Miele tunnustatud õpetajatest. 2016. aastal lõpetas ta süvaõppe Lino juhendamisel ja sai diplomi Ashtanga Jooga Uurimisinstituudist Roomas.
+2016. aastal asutas Raili Ashtanga Estonia — traditsioonilise Ashtanga jooga kooli Tallinnas. Ta töötas välja süstemaatilise ja metoodilise koolitusprogrammi abiõpetajatele, mida ta on korraldanud igal aastal alates 2019. aastast.
+Ühendkuningriigis juhib Raili Ashtanga jooga programmi Yoga Reading stuudios ja õpetab regulaarselt iganädalasi tunde The Little Yoga Studios Twyfordis.
+Raili õpetab Ashtanga joogat traditsioonilise meetodi järgi, mida sanskriti keeles nimetatakse parampara, kus õpetaja annab teadmised otse õpilasele edasi. Tema õpetamisstiil on julgustav ja toetav, aidates õpilastel luua oma individuaalse igapäevase praktika.
+Ettevõtja ja endise tantsijana praktiseerib Raili Ashtanga joogat 5–6 korda nädalas ning õpetab iganädalaselt nii Eestis kui Ühendkuningriigis. Alates 2010. aastast käib ta igal aastal Indias ja Itaalias oma õpetajat Lino Mielet assisteerimas.`,
+            philosophy: "Ma usun, et järjepidevus on muutuse võti. Praktika ei seisne täiuslikus poosis, vaid kohalolus, mille tood igasse hetke matil. Minu roll õpetajana on luua toetav keskkond, kus iga õpilane saab avastada oma tee läbi selle iidse praktika.",
+            highlights: [
+                "Lino Miele tunnustatud õpetaja",
+                "Ashtanga Jooga Uurimisinstituudi diplom, Rooma (2016)",
+                "Ashtanga Estonia asutaja (2016)",
+                "20+ aastat jooga praktikat",
+                "10+ aastat õpetamiskogemust",
+                "Lino Miele assistent Indias ja Itaalias alates 2010",
+                "Abiõpetajate koolitusprogrammi arendaja",
+                "Õpetab Eestis ja Ühendkuningriigis"
+            ],
+            testimonials: [
+                {
+                    title: "Ekspertne ja julgustav juhendamine",
+                    text: "Õpilased tõstavad esile tema ekspertset juhendamist töötubades, märkides, et ta aitab neil arendada põhjalikku arusaamist jada, hingamise ja voolu kohta."
+                },
+                {
+                    title: "Kõrge taseme traditsiooniline õpetamine",
+                    text: "Tema stuudiote arvustajad kiidavad sageli kõrgekvaliteedilist õpetamist ja individuaalset lähenemist."
+                },
+                {
+                    title: "Toetav ja vastuvõtlik keskkond",
+                    text: "Isegi absoluutsete algajate jaoks kirjeldatakse tema tundide atmosfääri kui fokusseeritud ja lõõgastavat samaaegselt."
+                },
+                {
+                    title: "Terviklikud ja elumuutvad tulemused",
+                    text: "Praktiseerijad on märkinud, et tema jooga kirg teeb nende elus siiralt vahet, jättes nad tundma rahulikult, energiliselt."
+                }
+            ]
         },
         fi: {
             name: "Raili Maripuu",
-            role: "Perustaja ja Ashtanga-opettaja",
-            quote: "Jooga on sielun peili, päivittäinen harjoitus, joka paljastaa todellisen luontomme hengityksen kautta.",
-            bio: "Raili on GoYoga Tallinnan visionääri. Yli kahden vuosikymmenen omistautuneen harjoituksen ja opetuksen myötä hän tuo aitoa Ashtanga Vinyasa -menetelmää eloon. Hänen matkansa alkoi Mysoren perinteisistä shaloista Intiassa, ja siitä lähtien hän on omistanut elämänsä kahdeksan raajan (Eight Limbs) viisauden jakamiseen.",
+            role: "Perustaja ja Ashtanga Jooga Opettaja",
+            quote: "Johdonmukaisuus on avain muutokseen. Harjoituksessa ei ole kyse täydellisestä asennosta, vaan läsnäolosta, jonka tuot jokaiselle hetkelle matolla.",
+            bio: `Raili Maripuu on virolainen, joka asuu Isossa-Britanniassa ja on harjoittanut joogaa yli 20 vuotta. Hän aloitti päivittäisen Ashtanga jooga -harjoituksensa vuonna 2009 ja on opettanut yli 10 vuotta.
+Hänen pääopettajansa ovat Lino Miele (Italia) ja Hamish Hendry (Iso-Britannia). Raili on yksi Lino Mielen tunnustetuista opettajista. Vuonna 2016 hän suoritti syventävän tutkinnon Linon ohjauksessa ja sai diplomin Ashtanga Yoga Research Institutesta Roomassa.
+Vuonna 2016 Raili perusti Ashtanga Estonian — perinteisen Ashtanga jooga -koulun Tallinnaan. Hän kehitti järjestelmällisen koulutusohjelman apuopettajille, jota hän on järjestänyt vuosittain vuodesta 2019.
+Isossa-Britanniassa Raili johtaa Ashtanga jooga -ohjelmaa Yoga Readingissa ja opettaa säännöllisiä viikkotunteja The Little Yoga Studiossa Twyfordissa.
+Raili opettaa Ashtangaa perinteisen menetelmän mukaan, jota kutsutaan sanskritin kielellä paramparaksi, jossa opettaja välittää tiedon suoraan oppilaalle. Hänen opetustyylinsä on kannustava ja tukeva.
+Yrittäjä ja entinen tanssija, Raili harjoittaa Ashtanga joogaa 5–6 kertaa viikossa ja opettaa viikoittain sekä Virossa että Isossa-Britanniassa. Vuodesta 2010 hän on tehnyt vuosittaisia matkoja Intiaan ja Italiaan avustaakseen opettajaansa Lino Mielea.`,
             philosophy: "Uskon, että johdonmukaisuus on avain muutokseen. Harjoituksessa ei ole kyse täydellisestä asennosta, vaan läsnäolosta, jonka tuot jokaiselle hetkelle matolla.",
-            highlights: ["Mysore-auktorisoitu harjoitus", "Yli 10 000 tuntia opetusta", "Omistautunut perinteille"]
+            highlights: [
+                "Lino Mielen tunnustettu opettaja",
+                "Ashtanga Yoga Research Instituten diploma, Rooma (2016)",
+                "Ashtanga Estonian perustaja (2016)",
+                "20+ vuotta joogan harjoittelua",
+                "10+ vuotta opetuskokemusta",
+                "Lino Mielen avustaja Intiassa ja Italiassa vuodesta 2010",
+                "Apuopettajien koulutusohjelman kehittäjä",
+                "Opettaa Virossa ja Isossa-Britanniassa"
+            ],
+            testimonials: [
+                {
+                    title: "Asiantunteva ja voimaannuttava ohjaus",
+                    text: "Oppilaat korostavat hänen asiantuntevaa ohjaustaan työpajoissa, ja hänen avullaan he kehittävät perusteellista ymmärrystä sarjasta, hengityksestä ja virtauksesta."
+                },
+                {
+                    title: "Korkealaatuinen perinteinen opetus",
+                    text: "Hänen studioittensa arvioijat kiittävät usein korkealaatuista opetusta ja yksilöllistä lähestymistapaa."
+                },
+                {
+                    title: "Tukeva ja vastaanottava ympäristö",
+                    text: "Jopa absoluuttiset aloittelijat kuvaavat hänen tuntiensa tunnelmaa keskittyneeksi ja rentouttavaksi samanaikaisesti."
+                },
+                {
+                    title: "Kokonaisvaltaiset ja elämää muuttavat tulokset",
+                    text: "Harjoittajat ovat huomanneet, että hänen joogaintohimonsa tekee vilpittömän eron heidän elämässään."
+                }
+            ]
         }
     },
     "victoria-palusaar": {

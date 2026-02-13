@@ -89,7 +89,7 @@ const reviewsData = [
 ];
 
 const teachersData = {
-    "raili-maripuu": { "name": "Raili Maripuu", "title": "Founder & Ashtanga Teacher", "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b", "socials": { "instagram": "https://www.instagram.com/raili.yoga/", "facebook": "https://www.facebook.com/raili.yoga" } },
+    "raili-maripuu": { "name": "Raili Maripuu", "title": "Founder & Ashtanga Yoga Teacher", "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b", "socials": { "instagram": "https://www.instagram.com/raili.yoga/", "facebook": "https://www.facebook.com/raili.yoga" } },
     "victoria-palusaar": { "name": "Victoria Palusaar", "title": "Ashtanga | Nutritional Therapist", "image": "https://images.unsplash.com/photo-1599447421416-3414500d18a5", "socials": { "instagram": "https://www.instagram.com/vicky_pa/", "facebook": "https://www.facebook.com/victoria.palusaar" } },
     "triin-parro": { "name": "Triin Parro", "title": "Strength & Holistic Health", "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b", "socials": { "instagram": "https://www.instagram.com/triin.p/", "facebook": "https://www.facebook.com/fitmindoy/" } },
     "kaia-karjatse": { "name": "Kaia Karjatse", "title": "60+ Yoga | Sound Therapy", "image": "assets/images/kaia.png", "socials": { "instagram": "#", "facebook": "#" } },
