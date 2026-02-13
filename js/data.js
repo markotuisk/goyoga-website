@@ -125,7 +125,7 @@ const classesData = {
                     {
                         name: "Sting",
                         role: "Musician",
-                        quote: "Yoga is almost like music in a way; there's no end to it. It is a spiritual practice. It's a journey I'm making.",
+                        quote: "Yoga is almost like music in a way; there's no end to it. It is a spiritual practice. It's a journey I'm making to find peace.",
                         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Sting_Brussels_22_October_2019_%281%29.jpg/440px-Sting_Brussels_22_October_2019_%281%29.jpg"
                     },
                     {
@@ -135,10 +135,106 @@ const classesData = {
                         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Willem_Dafoe_Cannes_2019.jpg/440px-Willem_Dafoe_Cannes_2019.jpg"
                     },
                     {
+                        name: "Jennifer Aniston",
+                        role: "Actress",
+                        quote: "Yoga changed my life. It calms me down. It's a therapy session, a workout and meditation all at the same time!",
+                        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/JenniferAnistonTIFFSept2014.jpg/440px-JenniferAnistonTIFFSept2014.jpg"
+                    },
+                    {
+                        name: "Matthew McConaughey",
+                        role: "Actor",
+                        quote: "Yoga gives me a feeling of flexibility as well as strength. It contributes to a feeling of total well-being.",
+                        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Matthew_McConaughey_2011.jpg/440px-Matthew_McConaughey_2011.jpg"
+                    },
+                    {
+                        name: "Miley Cyrus",
+                        role: "Singer",
+                        quote: "Gotta do yoga not for my body but for my mind! DO YOGA or GO CRAZY!",
+                        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Miley_Cyrus_Primavera19_-226_%2848017367646%29_%28cropped%29.jpg/440px-Miley_Cyrus_Primavera19_-226_%2848017367646%29_%28cropped%29.jpg"
+                    },
+                    {
+                        name: "Gisele Bündchen",
+                        role: "Supermodel",
+                        quote: "Movement is medicine. For your heart, your muscles, and just as importantly, for your mind and soul.",
+                        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Gisele_Bundchen2.jpg/440px-Gisele_Bundchen2.jpg"
+                    },
+                    {
                         name: "R. Sharath Jois",
                         role: "Lineage Holder",
                         quote: "Yoga is not about touching your toes, it is about what you learn on the way down.",
                         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Sharath_Jois.jpg/440px-Sharath_Jois.jpg"
+                    },
+                    {
+                        name: "Rafael Nadal",
+                        role: "Tennis Champion",
+                        quote: "I do yoga and stretching every day. It helps me stay flexible and focused on the court.",
+                        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Rafael_Nadal_%2812054444625%29.jpg/440px-Rafael_Nadal_%2812054444625%29.jpg"
+                    },
+                    {
+                        name: "Adriana Lima",
+                        role: "Supermodel",
+                        quote: "Yoga is my time to connect with myself. It keeps me grounded and strong.",
+                        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Adriana_Lima_2019_by_Glenn_Francis.jpg/440px-Adriana_Lima_2019_by_Glenn_Francis.jpg"
+                    },
+                    {
+                        name: "Chris Hemsworth",
+                        role: "Actor",
+                        quote: "You lift weights to build muscle, you meditate to build a stronger mind. Yoga combines both.",
+                        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Chris_Hemsworth_by_Gage_Skidmore_2_%28cropped%29.jpg/440px-Chris_Hemsworth_by_Gage_Skidmore_2_%28cropped%29.jpg"
+                    },
+                    {
+                        name: "Alicia Keys",
+                        role: "Musician",
+                        quote: "Yoga is a practice that I hold very dear. It helps me to be a better mother, a better artist, and a better person.",
+                        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Alicia_Keys_2013-01-22_001.jpg/440px-Alicia_Keys_2013-01-22_001.jpg"
+                    },
+                    {
+                        name: "Tim Ferriss",
+                        role: "Author & Entrepreneur",
+                        quote: "The more I learn about the body, the more I realize how important flexibility and mobility are for longevity.",
+                        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Tim_Ferriss_at_The_Next_Web_Conference_2017.jpg/440px-Tim_Ferriss_at_The_Next_Web_Conference_2017.jpg"
+                    },
+                    {
+                        name: "Aubrey Marcus",
+                        role: "Entrepreneur",
+                        quote: "Ashtanga yoga is a discipline that demands your full presence. It's a powerful tool for self-mastery.",
+                        image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b" // generic yoga/man
+                    },
+                    {
+                        name: "David Beckham",
+                        role: "Soccer Legend",
+                        quote: "I do an hour of Pilates or yoga at 6 or 7 AM. It's essential for my recovery and overall fitness.",
+                        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/David_Beckham_2013.jpg/440px-David_Beckham_2013.jpg"
+                    },
+                    {
+                        name: "Serena Williams",
+                        role: "Tennis Champion",
+                        quote: "Yoga is a great way to stay flexible and prevent injuries. It's a key part of my training routine.",
+                        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Serena_Williams_US_Open_2013.jpg/440px-Serena_Williams_US_Open_2013.jpg"
+                    },
+                    {
+                        name: "Tony Hawk",
+                        role: "Skateboarding Legend",
+                        quote: "Staying flexible is key. Yoga helps me manage stress and keeps me skating.",
+                        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Tony_Hawk_2016.jpg/440px-Tony_Hawk_2016.jpg"
+                    },
+                    {
+                        name: "Lindsay Lohan",
+                        role: "Actress",
+                        quote: "Yoga has been a savior for me. It gives me clarity and helps me focus on what's important.",
+                        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Lindsay_Lohan_Deauville_2019.jpg/440px-Lindsay_Lohan_Deauville_2019.jpg"
+                    },
+                    {
+                        name: "Alexandra Daddario",
+                        role: "Actress",
+                        quote: "I love yoga. It's a great way to stay fit and centered.",
+                        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Alexandra_Daddario_2016.jpg/440px-Alexandra_Daddario_2016.jpg"
+                    },
+                    {
+                        name: "Kyle Korver",
+                        role: "NBA Player",
+                        quote: "Yoga helps me maintain balance and focus on the court. It's crucial for my longevity as an athlete.",
+                        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Kyle_Korver_Cavaliers.jpg/440px-Kyle_Korver_Cavaliers.jpg"
                     }
                 ],
                 lineage: `Goyoga Tallinn hosts a traditional Ashtanga Estonia shala (school) in central Tallinn since 2016. The school is dedicated to consistent teaching the traditional ashtanga yoga as developed and systemised by <a href="https://en.wikipedia.org/wiki/K._Pattabhi_Jois" target="_blank" class="text-pink-600 hover:text-pink-800 underline">Sri K. Pattabhi Jois</a>. Ashtanga Estonia uses the traditional <a href="https://www.researchgate.net/profile/Mudit-Pandey-2/publication/398320435_The_Guru-Shishya_Parampara_An_Efficient_and_Time-_Tested_Education_System_in_Ancient_India/links/69316e9b27359023a008d9d9/The-Guru-Shishya-Parampara-An-Efficient-and-Time-Tested-Education-System-in-Ancient-India.pdf" target="_blank" class="text-pink-600 hover:text-pink-800 underline">parampara teaching method</a> which means that the practise and knowledge is passed to the student from the teacher directly and in person. The teacher-student connection at Ashtanga Estonia comes through a renowned senior ashtanga yoga teacher <a href="https://www.linomiele.com/?pagina=ayri.php" target="_blank" class="text-pink-600 hover:text-pink-800 underline">Lino Miele</a>, who was a student of Pattabhi Jois since 1988. Lino Miele is the main teacher of the founder and teacher at Ashtanga Estonia, <a href="teacher.html?id=raili-maripuu" class="text-pink-600 hover:text-pink-800 underline">Raili Maripuu</a> from 2010.`,

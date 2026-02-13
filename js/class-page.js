@@ -75,20 +75,50 @@ function renderClassDetails(id, lang) {
     const socialProofSection = document.getElementById('class-social-proof-section');
     const socialProofGrid = document.getElementById('class-social-proof-grid');
     const socialProof = t('socialProof');
+    const INITIAL_SHOW_COUNT = 6;
 
     if (socialProofSection && socialProofGrid) {
         if (socialProof && socialProof.length > 0) {
-            socialProofGrid.innerHTML = socialProof.map(item => `
-                <div class="bg-gray-50 p-6 rounded-xl flex flex-col md:flex-row items-center md:items-start gap-6 shadow-sm hover:shadow-md transition-shadow">
-                    <img src="${item.image}" alt="${item.name}" class="w-20 h-20 rounded-full object-cover border-2 border-pink-100 flex-shrink-0">
-                    <div class="text-center md:text-left">
-                        <blockquote class="text-gray-600 italic mb-4">"${item.quote}"</blockquote>
-                        <div class="font-medium text-gray-900">${item.name}</div>
-                        <div class="text-sm text-pink-600">${item.role}</div>
+            const renderCard = (item, hidden = false) => `
+                <div class="social-proof-card bg-gray-50 p-6 rounded-xl flex flex-col items-center text-center gap-4 shadow-sm hover:shadow-md transition-all duration-300 ${hidden ? 'hidden' : ''}" ${hidden ? 'data-hidden-card' : ''}>
+                    <img src="${item.image}" alt="${item.name}" class="w-16 h-16 rounded-full object-cover border-2 border-pink-100 flex-shrink-0" loading="lazy">
+                    <blockquote class="text-gray-600 italic text-sm leading-relaxed">"${item.quote}"</blockquote>
+                    <div>
+                        <div class="font-medium text-gray-900 text-sm">${item.name}</div>
+                        <div class="text-xs text-pink-600">${item.role}</div>
                     </div>
                 </div>
-            `).join('');
+            `;
+
+            socialProofGrid.innerHTML = socialProof.map((item, index) =>
+                renderCard(item, index >= INITIAL_SHOW_COUNT)
+            ).join('');
+
             socialProofSection.classList.remove('hidden');
+
+            // Show More button logic
+            const showMoreContainer = document.getElementById('social-proof-show-more-container');
+            const showMoreBtn = document.getElementById('social-proof-show-more-btn');
+
+            if (socialProof.length > INITIAL_SHOW_COUNT && showMoreContainer && showMoreBtn) {
+                showMoreContainer.classList.remove('hidden');
+                showMoreBtn.addEventListener('click', () => {
+                    const hiddenCards = socialProofGrid.querySelectorAll('[data-hidden-card]');
+                    hiddenCards.forEach((card, i) => {
+                        setTimeout(() => {
+                            card.classList.remove('hidden');
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(20px)';
+                            requestAnimationFrame(() => {
+                                card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            });
+                        }, i * 80);
+                    });
+                    showMoreContainer.classList.add('hidden');
+                });
+            }
         } else {
             socialProofSection.classList.add('hidden');
         }
