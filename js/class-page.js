@@ -57,6 +57,44 @@ function renderClassDetails(id, lang) {
     document.getElementById('class-audience').innerHTML = `<p>${t('audience')}</p>`;
 
 
+
+    // Lineage Section
+    const lineageSection = document.getElementById('class-lineage-section');
+    const lineageContent = document.getElementById('class-lineage-content');
+
+    if (lineageSection && lineageContent) {
+        if (data.translations[lang].lineage) {
+            lineageContent.innerHTML = data.translations[lang].lineage;
+            lineageSection.classList.remove('hidden');
+        } else {
+            lineageSection.classList.add('hidden');
+        }
+    }
+
+    // Social Proof Section
+    const socialProofSection = document.getElementById('class-social-proof-section');
+    const socialProofGrid = document.getElementById('class-social-proof-grid');
+    const socialProof = t('socialProof');
+
+    if (socialProofSection && socialProofGrid) {
+        if (socialProof && socialProof.length > 0) {
+            socialProofGrid.innerHTML = socialProof.map(item => `
+                <div class="bg-gray-50 p-6 rounded-xl flex flex-col md:flex-row items-center md:items-start gap-6 shadow-sm hover:shadow-md transition-shadow">
+                    <img src="${item.image}" alt="${item.name}" class="w-20 h-20 rounded-full object-cover border-2 border-pink-100 flex-shrink-0">
+                    <div class="text-center md:text-left">
+                        <blockquote class="text-gray-600 italic mb-4">"${item.quote}"</blockquote>
+                        <div class="font-medium text-gray-900">${item.name}</div>
+                        <div class="text-sm text-pink-600">${item.role}</div>
+                    </div>
+                </div>
+            `).join('');
+            socialProofSection.classList.remove('hidden');
+        } else {
+            socialProofSection.classList.add('hidden');
+        }
+    }
+
+
     // 3. Benefits
     const benefitsContainer = document.getElementById('class-benefits');
     benefitsContainer.innerHTML = '';

@@ -8,13 +8,13 @@ const translationsData = {
         "schedule.tagline": "Live Class Schedule", "schedule.title": "Find Your Time to Practice", "schedule.description": "Our schedule is always up-to-date. Find a class and book your spot directly through the calendar below.",
         "pricing.tagline": "Pricing Options", "pricing.title": "Invest in Your Practice", "pricing.description": "We offer flexible pricing options to suit your schedule and commitment level.", "pricing.single.title": "Single Session", "pricing.single.description": "Perfect for drop-ins or trying out a class.", "pricing.memberships.title": "Memberships", "pricing.memberships.description": "The best value for dedicated practitioners.", "pricing.passes.title": "Multi-Visit Passes", "pricing.passes.description": "Great value for regular students who need flexibility.", "pricing.view_options": "View Options", "pricing.most_popular": "Most Popular", "pricing.offer.title": "Seasonal Offering", "pricing.offer.subtitle": "Back to Yoga Special!", "pricing.offer.description": "Commit to your practice this autumn. Get a 5-class pass.", "pricing.offer.ends_in": "Offer Ends In:", "pricing.offer.days": "Days", "pricing.offer.hours": "Hours", "pricing.offer.minutes": "Mins", "pricing.offer.seconds": "Secs", "pricing.offer.claim_button": "Claim Offer",
         "teachers.tagline": "Our Teachers", "teachers.title": "Experience & Wisdom", "teachers.description": "A diverse team of practitioners dedicated to your path of yoga and wellness.",
-        "teachers.raili.title": "Founder | Ashtanga", "teachers.raili.description": "Bringing authentic Ashtanga practice to Tallinn with decades of experience.",
-        "teachers.victoria.title": "Ashtanga | Nutritional Therapist", "teachers.victoria.description": "Focusing on conscious eating and the traditional Ashtanga method.",
-        "teachers.triin.title": "Strength & Holistic Health", "teachers.triin.description": "Specializing in strength training and personalized wellness journeys.",
-        "teachers.kaia.title": "60+ Yoga | Sound Therapy", "teachers.kaia.description": "Gentle movement and healing vibrations for all stages of life.",
-        "teachers.edith.title": "Qigong | Energy Work", "teachers.edith.description": "Working with meridians and the Radiant Lotus Qigong tradition.",
-        "teachers.marit.title": "Meditations | Cacao Ceremonies", "teachers.marit.description": "Opening hearts through sacred rituals and deep presence.",
-        "teachers.david.title": "Sound Baths | Yoga Nidra", "teachers.david.description": "Mastering the gong to clear blockages and restore harmony.",
+        "teachers.raili-maripuu.title": "Founder | Ashtanga", "teachers.raili-maripuu.description": "Bringing authentic Ashtanga practice to Tallinn with decades of experience.",
+        "teachers.victoria-palusaar.title": "Ashtanga | Nutritional Therapist", "teachers.victoria-palusaar.description": "Focusing on conscious eating and the traditional Ashtanga method.",
+        "teachers.triin-parro.title": "Strength & Holistic Health", "teachers.triin-parro.description": "Specializing in strength training and personalized wellness journeys.",
+        "teachers.kaia-karjatse.title": "60+ Yoga | Sound Therapy", "teachers.kaia-karjatse.description": "Gentle movement and healing vibrations for all stages of life.",
+        "teachers.edith-tiitsaar.title": "Qigong | Energy Work", "teachers.edith-tiitsaar.description": "Working with meridians and the Radiant Lotus Qigong tradition.",
+        "teachers.marit-tuisk.title": "Meditations | Cacao Ceremonies", "teachers.marit-tuisk.description": "Opening hearts through sacred rituals and deep presence.",
+        "teachers.david-lepp.title": "Sound Baths | Yoga Nidra", "teachers.david-lepp.description": "Mastering the gong to clear blockages and restore harmony.",
         "teachers.discover": "Discover Journey",
         "events.tagline": "Deepen Your Practice", "events.title": "Upcoming Events & Retreats", "events.description": "Join us for special workshops and immersive retreats.", "events.event1.title": "Autumn Rejuvenation Retreat", "events.event1.description": "A 4-day immersive retreat in the Estonian countryside.", "events.event2.title": "Mastering Inversions Workshop", "events.event2.description": "Join Mia Johnson to build the strength and confidence to master inversions.", "events.register_button": "Register Now", "events.learn_more_button": "Learn More",
         "community.tagline": "Community", "community.title": "Words from Our Community", "community.description": "Hear what our students have to say.", "community.leave_review_button": "Leave a Review",
@@ -32,13 +32,13 @@ const translationsData = {
         "schedule.tagline": "Reaalajaline tunniplaan", "schedule.title": "Leia oma aeg praktiseerimiseks", "schedule.description": "Meie tunniplaan on alati ajakohane.",
         "pricing.tagline": "Hinnavalikud", "pricing.title": "Investeeri oma praktikasse", "pricing.description": "Pakume paindlikke hinnavalikuid.", "pricing.single.title": "Üksikkord", "pricing.single.description": "Täiuslik ühekordseks külastuseks.", "pricing.memberships.title": "Liikmelisus", "pricing.memberships.description": "Parim väärtus pühendunud praktiseerijatele.", "pricing.passes.title": "Mitmikkorrakardid", "pricing.passes.description": "Suurepärane väärtus regulaarsetele õpilastele.", "pricing.view_options": "Vaata valikuid", "pricing.most_popular": "Populaarseim", "pricing.offer.title": "Hooajaline pakkumine", "pricing.offer.subtitle": "Tagasi jooga eripakkumine!", "pricing.offer.description": "Pühendu oma praktikale sel sügisel.", "pricing.offer.ends_in": "Pakkumine lõppeb:", "pricing.offer.days": "Päeva", "pricing.offer.hours": "Tundi", "pricing.offer.minutes": "Minutit", "pricing.offer.seconds": "Sekundit", "pricing.offer.claim_button": "Kasuta pakkumist",
         "teachers.tagline": "Meie õpetajad", "teachers.title": "Kogemus ja tarkus", "teachers.description": "Mitmekülgne meeskond praktikuid, kes on pühendunud sinu jooga- ja heaolu teekonnale.",
-        "teachers.raili.title": "Asutaja | Ashtanga", "teachers.raili.description": "Toob Tallinna autentse Ashtanga praktika aastakümnete pikkuse kogemusega.",
-        "teachers.victoria.title": "Ashtanga | Toitumisterapeut", "teachers.victoria.description": "Keskendub teadlikule toitumisele ja traditsioonilisele Ashtanga meetodile.",
-        "teachers.triin.title": "Jõud ja holistiline tervis", "teachers.triin.description": "Spetsialiseerunud jõutreeningule ja individuaalsetele heaolu teekondadele.",
-        "teachers.kaia.title": "60+ jooga | Heliteraapia", "teachers.kaia.description": "Õrn liikumine ja tervendavad vibratsioonid kõikidele eluetappidele.",
-        "teachers.edith.title": "Qigong | Energiatöö", "teachers.edith.description": "Töö meridiaanide ja Särava Lootose Qigong traditsiooniga.",
-        "teachers.marit.title": "Meditatsioonid | Kakaotseremooniad", "teachers.marit.description": "Avab südameid läbi pühade rituaalide ja sügava kohalolu.",
-        "teachers.david.title": "Helirännakud | Yoga Nidra", "teachers.david.description": "Gongi valdaja, et puhastada blokeeringud ja taastada harmoonia.",
+        "teachers.raili-maripuu.title": "Asutaja | Ashtanga", "teachers.raili-maripuu.description": "Toob Tallinna autentse Ashtanga praktika aastakümnete pikkuse kogemusega.",
+        "teachers.victoria-palusaar.title": "Ashtanga | Toitumisterapeut", "teachers.victoria-palusaar.description": "Keskendub teadlikule toitumisele ja traditsioonilisele Ashtanga meetodile.",
+        "teachers.triin-parro.title": "Jõud ja holistiline tervis", "teachers.triin-parro.description": "Spetsialiseerunud jõutreeningule ja individuaalsetele heaolu teekondadele.",
+        "teachers.kaia-karjatse.title": "60+ jooga | Heliteraapia", "teachers.kaia-karjatse.description": "Õrn liikumine ja tervendavad vibratsioonid kõikidele eluetappidele.",
+        "teachers.edith-tiitsaar.title": "Qigong | Energiatöö", "teachers.edith-tiitsaar.description": "Töö meridiaanide ja Särava Lootose Qigong traditsiooniga.",
+        "teachers.marit-tuisk.title": "Meditatsioonid | Kakaotseremooniad", "teachers.marit-tuisk.description": "Avab südameid läbi pühade rituaalide ja sügava kohalolu.",
+        "teachers.david-lepp.title": "Helirännakud | Yoga Nidra", "teachers.david-lepp.description": "Gongi valdaja, et puhastada blokeeringud ja taastada harmoonia.",
         "teachers.discover": "Avasta teekond",
         "events.tagline": "Süvenda oma praktikat", "events.title": "Tulevased sündmused", "events.description": "Liitu meiega töötubadel.", "events.event1.title": "Sügise värskendusretriit", "events.event1.description": "4-päevane põhjalik retriit Eesti maal.", "events.event2.title": "Pöördasendite meisterdamise töötuba", "events.event2.description": "Liitu Mia Johnsoniga.", "events.register_button": "Registreeri kohe", "events.learn_more_button": "Loe lähemalt",
         "community.tagline": "Kogukond", "community.title": "Sõnad meie kogukonnast", "community.description": "Kuula, mida meie õpilased räägivad.", "community.leave_review_button": "Jäta Tagasisidet",
@@ -59,13 +59,13 @@ const translationsData = {
         "schedule.tagline": "Reaaliaikainen aikataulu", "schedule.title": "Löydä aika harjoitteluun", "schedule.description": "Aikataulumme on aina ajan tasalla.",
         "pricing.tagline": "Hintavaihtoehdot", "pricing.title": "Investoi harjoitteluusi", "pricing.description": "Tarjoamme joustavia hintavaihtoehtoja.", "pricing.single.title": "Yksittäiskerta", "pricing.single.description": "Täydellinen kertakäynteihin.", "pricing.memberships.title": "Jäsenyydet", "pricing.memberships.description": "Paras arvo omistautuneille harjoittajille.", "pricing.passes.title": "Useamman kerran liput", "pricing.passes.description": "Loistava arvo säännöllisille oppilaille.", "pricing.view_options": "Katso vaihtoehdot", "pricing.most_popular": "Suosituin", "pricing.offer.title": "Kausitarjous", "pricing.offer.subtitle": "Takaisin jooga -erikoistarjous!", "pricing.offer.description": "Sitoudu harjoitteluusi tänä syksynä.", "pricing.offer.ends_in": "Tarjous päättyy:", "pricing.offer.days": "Päivää", "pricing.offer.hours": "Tuntia", "pricing.offer.minutes": "Minuuttia", "pricing.offer.seconds": "Sekuntia", "pricing.offer.claim_button": "Käytä tarjousta",
         "teachers.tagline": "Opettajamme", "teachers.title": "Kokemus ja viisaus", "teachers.description": "Monipuolinen tiimi harjoittajia, jotka ovat omistautuneet jooga- ja hyvinvointimatkallesi.",
-        "teachers.raili.title": "Perustaja | Ashtanga", "teachers.raili.description": "Tuo aitoa Ashtanga-harjoitusta Tallinnaan vuosikymmenten kokemuksella.",
-        "teachers.victoria.title": "Ashtanga | Ravintoterapeutti", "teachers.victoria.description": "Keskittyy tietoiseen syömiseen ja perinteiseen Ashtanga-menetelmään.",
-        "teachers.triin.title": "Voima ja holistinen terveys", "teachers.triin.description": "Erikoistunut voimaharjoitteluun ja yksilöllisiin hyvinvointimatkoihin.",
-        "teachers.kaia.title": "60+ jooga | Ääniterapia", "teachers.kaia.description": "Lempeää liikettä ja parantavia värähtelyjä elämän kaikkiin vaiheisiin.",
-        "teachers.edith.title": "Qigong | Energiatyö", "teachers.edith.description": "Työskentely meridiaanien ja Radiant Lotus Qigong -perinteen parissa.",
-        "teachers.marit.title": "Meditaatiot | Kaakaoseremoniat", "teachers.marit.description": "Sydänten avaaminen pyhien rituaalien ja syvän läsnäolon kautta.",
-        "teachers.david.title": "Äänimaljakylvyt | Yoga Nidra", "teachers.david.description": "Gongin mestari poistamaan tukoksia ja palauttamaan harmonian.",
+        "teachers.raili-maripuu.title": "Perustaja | Ashtanga", "teachers.raili-maripuu.description": "Tuo aitoa Ashtanga-harjoitusta Tallinnaan vuosikymmenten kokemuksella.",
+        "teachers.victoria-palusaar.title": "Ashtanga | Ravintoterapeutti", "teachers.victoria-palusaar.description": "Keskittyy tietoiseen syömiseen ja perinteiseen Ashtanga-menetelmään.",
+        "teachers.triin-parro.title": "Voima ja holistinen terveys", "teachers.triin-parro.description": "Erikoistunut voimaharjoitteluun ja yksilöllisiin hyvinvointimatkoihin.",
+        "teachers.kaia-karjatse.title": "60+ jooga | Ääniterapia", "teachers.kaia-karjatse.description": "Lempeää liikettä ja parantavia värähtelyjä elämän kaikkiin vaiheisiin.",
+        "teachers.edith-tiitsaar.title": "Qigong | Energiatyö", "teachers.edith-tiitsaar.description": "Työskentely meridiaanien ja Radiant Lotus Qigong -perinteen parissa.",
+        "teachers.marit-tuisk.title": "Meditaatiot | Kaakaoseremoniat", "teachers.marit-tuisk.description": "Sydänten avaaminen pyhien rituaalien ja syvän läsnäolon kautta.",
+        "teachers.david-lepp.title": "Äänimaljakylvyt | Yoga Nidra", "teachers.david-lepp.description": "Gongin mestari poistamaan tukoksia ja palauttamaan harmonian.",
         "teachers.discover": "Löydä tarina",
         "events.tagline": "Syvennä harjoitustasi", "events.title": "Tulevased sündmused", "events.description": "Liitu meiega töötubadel.", "events.event1.title": "Sügise värskendusretriit", "events.event1.description": "4-päevane põhjalik retriit Eesti maal.", "events.event2.title": "Pöördasendite meisterdamise töötuba", "events.event2.description": "Liitu Mia Johnsoniga.", "events.register_button": "Registreeri kohe", "events.learn_more_button": "Loe lähemalt",
         "community.tagline": "Yhteisö", "community.title": "Sanoja yhteisöltämme", "community.description": "Kuule, mitä oppilaamme sanovat.", "community.leave_review_button": "Jätä Arvostelu",
@@ -89,32 +89,59 @@ const reviewsData = [
 ];
 
 const teachersData = {
-    raili: { "name": "Raili Maripuu", "title": "Founder & Ashtanga Teacher", "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b", "socials": { "instagram": "https://www.instagram.com/raili.yoga/", "facebook": "https://www.facebook.com/raili.yoga" } },
-    victoria: { "name": "Victoria Palusaar", "title": "Ashtanga | Nutritional Therapist", "image": "https://images.unsplash.com/photo-1599447421416-3414500d18a5", "socials": { "instagram": "https://www.instagram.com/vicky_pa/", "facebook": "https://www.facebook.com/victoria.palusaar" } },
-    triin: { "name": "Triin Parro", "title": "Strength & Holistic Health", "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b", "socials": { "instagram": "https://www.instagram.com/triin.p/", "facebook": "https://www.facebook.com/fitmindoy/" } },
-    kaia: { "name": "Kaia Karjatse", "title": "60+ Yoga | Sound Therapy", "image": "assets/images/kaia.png", "socials": { "instagram": "#", "facebook": "#" } },
-    edith: { "name": "Edith Tiitsaar", "title": "Qigong | Energy Work", "image": "https://images.unsplash.com/photo-1545205597-3d9d02c29597", "socials": { "instagram": "#", "facebook": "#" } },
-    marit: { "name": "Marit Tuisk", "title": "Meditations | Cacao Ceremonies", "image": "assets/images/marit.png", "socials": { "instagram": "https://www.instagram.com/casa_rituals/", "facebook": "https://www.facebook.com/casarituals" } },
-    david: { "name": "David Lepp", "title": "Sound Baths | Yoga Nidra", "image": "https://images.unsplash.com/photo-1514533212735-5df27d970db0", "socials": { "instagram": "https://www.instagram.com/casa_rituals/", "facebook": "https://www.facebook.com/casarituals" } }
+    "raili-maripuu": { "name": "Raili Maripuu", "title": "Founder & Ashtanga Teacher", "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b", "socials": { "instagram": "https://www.instagram.com/raili.yoga/", "facebook": "https://www.facebook.com/raili.yoga" } },
+    "victoria-palusaar": { "name": "Victoria Palusaar", "title": "Ashtanga | Nutritional Therapist", "image": "https://images.unsplash.com/photo-1599447421416-3414500d18a5", "socials": { "instagram": "https://www.instagram.com/vicky_pa/", "facebook": "https://www.facebook.com/victoria.palusaar" } },
+    "triin-parro": { "name": "Triin Parro", "title": "Strength & Holistic Health", "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b", "socials": { "instagram": "https://www.instagram.com/triin.p/", "facebook": "https://www.facebook.com/fitmindoy/" } },
+    "kaia-karjatse": { "name": "Kaia Karjatse", "title": "60+ Yoga | Sound Therapy", "image": "assets/images/kaia.png", "socials": { "instagram": "#", "facebook": "#" } },
+    "edith-tiitsaar": { "name": "Edith Tiitsaar", "title": "Qigong | Energy Work", "image": "https://images.unsplash.com/photo-1545205597-3d9d02c29597", "socials": { "instagram": "#", "facebook": "#" } },
+    "marit-tuisk": { "name": "Marit Tuisk", "title": "Meditations | Cacao Ceremonies", "image": "assets/images/marit.png", "socials": { "instagram": "https://www.instagram.com/casa_rituals/", "facebook": "https://www.facebook.com/casarituals" } },
+    "david-lepp": { "name": "David Lepp", "title": "Sound Baths | Yoga Nidra", "image": "https://images.unsplash.com/photo-1514533212735-5df27d970db0", "socials": { "instagram": "https://www.instagram.com/casa_rituals/", "facebook": "https://www.facebook.com/casarituals" } }
 };
 window.teachersData = teachersData;
 
 const classesData = {
-    ashtanga: {
+    "ashtanga-yoga": {
         icon: "activity", // lucid icon name
         image: "https://images.unsplash.com/photo-1599447421416-3414500d18a5",
-        teacherIds: ["raili", "victoria"],
+        teacherIds: ["raili-maripuu", "victoria-palusaar"],
         translations: {
             en: {
                 title: "Ashtanga Yoga",
                 tagline: "A dynamic, moving meditation building strength and focus.",
-                description: "Ashtanga Yoga is a traditional system of yoga that synchronizes breath with a progressive series of postures. This process produces intense internal heat and a profuse, purifying sweat that detoxifies muscles and organs. The result is improved circulation, a light and strong body, and a calm mind.",
+                description: "<a href='https://en.wikipedia.org/wiki/Ashtanga_(vinyasa)_yoga' target='_blank' class='text-pink-600 hover:text-pink-800 underline'>Ashtanga Yoga</a> is a traditional system of yoga that synchronizes breath with a progressive series of postures. This process produces intense internal heat and a profuse, purifying sweat that detoxifies muscles and organs. The result is improved circulation, a light and strong body, and a calm mind.",
                 audience: "Ideal for those seeking a disciplined, physically demanding practice that builds strength, flexibility, and mental focus. Suitable for beginners who are up for a challenge, as well as prolonged practitioners.",
                 benefits: [
-                    { title: "Strength & Flexibility", description: "Builds lean muscle and deep flexibility simultaneously." },
-                    { title: "Detoxification", description: "Internal heat purifies the body through sweat." },
-                    { title: "Mental Clarity", description: "Focus on breath and drishti (gaze) calms the mind." }
+                    { title: "Strength & Flexibility", description: "Builds a strong, supple body through dynamic movement." },
+                    { title: "Detoxification", description: "Internal heat purifies muscles and organs." },
+                    { title: "Mental Focus", description: "Tristana method (breath, gaze, posture) sharpens concentration." }
                 ],
+                socialProof: [
+                    {
+                        name: "Madonna",
+                        role: "Pop Icon",
+                        quote: "Yoga is a metaphor for life. You have to take it really slowly. You can't rush. You can't skip to the next position. It is a workout for your mind, your body and your soul.",
+                        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Madonna_Rebel_Heart_Tour_2015_-_Stockholm_%2823051472299%29_%28cropped%29.jpg/440px-Madonna_Rebel_Heart_Tour_2015_-_Stockholm_%2823051472299%29_%28cropped%29.jpg"
+                    },
+                    {
+                        name: "Sting",
+                        role: "Musician",
+                        quote: "Yoga is almost like music in a way; there's no end to it. It is a spiritual practice. It's a journey I'm making.",
+                        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Sting_Brussels_22_October_2019_%281%29.jpg/440px-Sting_Brussels_22_October_2019_%281%29.jpg"
+                    },
+                    {
+                        name: "Willem Dafoe",
+                        role: "Actor",
+                        quote: "As I get older, ashtanga is very useful for health and peace of mind. It's a question of effort and surrender.",
+                        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Willem_Dafoe_Cannes_2019.jpg/440px-Willem_Dafoe_Cannes_2019.jpg"
+                    },
+                    {
+                        name: "R. Sharath Jois",
+                        role: "Lineage Holder",
+                        quote: "Yoga is not about touching your toes, it is about what you learn on the way down.",
+                        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Sharath_Jois.jpg/440px-Sharath_Jois.jpg"
+                    }
+                ],
+                lineage: `Goyoga Tallinn hosts a traditional Ashtanga Estonia shala (school) in central Tallinn since 2016. The school is dedicated to consistent teaching the traditional ashtanga yoga as developed and systemised by <a href="https://en.wikipedia.org/wiki/K._Pattabhi_Jois" target="_blank" class="text-pink-600 hover:text-pink-800 underline">Sri K. Pattabhi Jois</a>. Ashtanga Estonia uses the traditional <a href="https://www.researchgate.net/profile/Mudit-Pandey-2/publication/398320435_The_Guru-Shishya_Parampara_An_Efficient_and_Time-_Tested_Education_System_in_Ancient_India/links/69316e9b27359023a008d9d9/The-Guru-Shishya-Parampara-An-Efficient-and-Time-Tested-Education-System-in-Ancient-India.pdf" target="_blank" class="text-pink-600 hover:text-pink-800 underline">parampara teaching method</a> which means that the practise and knowledge is passed to the student from the teacher directly and in person. The teacher-student connection at Ashtanga Estonia comes through a renowned senior ashtanga yoga teacher <a href="https://www.linomiele.com/?pagina=ayri.php" target="_blank" class="text-pink-600 hover:text-pink-800 underline">Lino Miele</a>, who was a student of Pattabhi Jois since 1988. Lino Miele is the main teacher of the founder and teacher at Ashtanga Estonia, <a href="teacher.html?id=raili-maripuu" class="text-pink-600 hover:text-pink-800 underline">Raili Maripuu</a> from 2010.`,
                 faqs: [
                     { question: "Do I need to be flexible?", answer: "Not at all. Flexibility is a result of the practice, not a prerequisite." },
                     { question: "Is it suitable for beginners?", answer: "Yes, our teachers adjust the practice to your level." }
@@ -151,10 +178,10 @@ const classesData = {
             }
         }
     },
-    strength: {
+    "strength-training": {
         icon: "dumbbell",
         image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b",
-        teacherIds: ["triin"],
+        teacherIds: ["triin-parro"],
         translations: {
             en: {
                 title: "Strength",
@@ -199,10 +226,10 @@ const classesData = {
             }
         }
     },
-    senior: {
+    "yoga-for-seniors": {
         icon: "heart",
         image: "assets/images/kaia.png",
-        teacherIds: ["kaia"],
+        teacherIds: ["kaia-karjatse"],
         translations: {
             en: {
                 title: "60+ Yoga",
@@ -247,10 +274,10 @@ const classesData = {
             }
         }
     },
-    qigong: {
+    "qigong-energy-work": {
         icon: "sun",
         image: "https://images.unsplash.com/photo-1545205597-3d9d02c29597",
-        teacherIds: ["edith"],
+        teacherIds: ["edith-tiitsaar"],
         translations: {
             en: {
                 title: "Qigong",
@@ -295,10 +322,10 @@ const classesData = {
             }
         }
     },
-    soundbath: {
+    "sound-bath-meditation": {
         icon: "music",
         image: "https://images.unsplash.com/photo-1514533212735-5df27d970db0",
-        teacherIds: ["kaia", "david"],
+        teacherIds: ["kaia-karjatse", "david-lepp"],
         translations: {
             en: {
                 title: "Sound Baths",

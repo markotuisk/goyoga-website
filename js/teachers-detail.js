@@ -4,7 +4,7 @@
  */
 
 const teachersDetailData = {
-    raili: {
+    "raili-maripuu": {
         en: {
             name: "Raili Maripuu",
             role: "Founder & Ashtanga Teacher",
@@ -30,7 +30,7 @@ const teachersDetailData = {
             highlights: ["Mysore-auktorisoitu harjoitus", "Yli 10 000 tuntia opetusta", "Omistautunut perinteille"]
         }
     },
-    victoria: {
+    "victoria-palusaar": {
         en: {
             name: "Victoria Palusaar",
             role: "Ashtanga | Nutritional Therapist",
@@ -57,7 +57,7 @@ const teachersDetailData = {
         }
     },
 
-    triin: {
+    "triin-parro": {
         en: {
             name: "Triin Parro",
             role: "Strength & Holistic Health",
@@ -85,7 +85,7 @@ const teachersDetailData = {
     },
 
 
-    kaia: {
+    "kaia-karjatse": {
         en: {
             name: "Kaia Karjatse",
             role: "60+ Yoga | Sound Therapy",
@@ -111,7 +111,7 @@ const teachersDetailData = {
             highlights: ["Gong- ja kristallimaljamestari", "Tanssi- ja liiketerapeuti", "Ikääntyneiden hyvinvoinnin edistäjä"]
         }
     },
-    edith: {
+    "edith-tiitsaar": {
         en: {
             name: "Edith Tiitsaar",
             role: "Qigong | Energy Work",
@@ -137,7 +137,7 @@ const teachersDetailData = {
             highlights: ["Radiant Lotus Qigong", "Meridiaanien aktivointi", "Naisten hyvinvoinnin asiantuntija"]
         }
     },
-    marit: {
+    "marit-tuisk": {
         en: {
             name: "Marit Tuisk",
             role: "Meditations | Cacao Ceremonies",
@@ -163,7 +163,7 @@ const teachersDetailData = {
             highlights: ["Sertifioitu kaakaofasilitoija", "Reiki-harjoittaja", "Pyhien rituaalien asiantuntija"]
         }
     },
-    david: {
+    "david-lepp": {
         en: {
             name: "David Lepp",
             role: "Sound Baths | Yoga Nidra",
