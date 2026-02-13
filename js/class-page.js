@@ -71,6 +71,20 @@ function renderClassDetails(id, lang) {
         }
     }
 
+    // What to Expect Section
+    const whatToExpectSection = document.getElementById('class-what-to-expect-section');
+    const whatToExpectContent = document.getElementById('class-what-to-expect-content');
+    const whatToExpect = t('whatToExpect');
+
+    if (whatToExpectSection && whatToExpectContent) {
+        if (whatToExpect) {
+            whatToExpectContent.innerHTML = whatToExpect;
+            whatToExpectSection.classList.remove('hidden');
+        } else {
+            whatToExpectSection.classList.add('hidden');
+        }
+    }
+
     // Social Proof Section
     const socialProofSection = document.getElementById('class-social-proof-section');
     const socialProofGrid = document.getElementById('class-social-proof-grid');

@@ -115,6 +115,29 @@ const classesData = {
                     { title: "Detoxification", description: "Internal heat purifies muscles and organs." },
                     { title: "Mental Focus", description: "Tristana method (breath, gaze, posture) sharpens concentration." }
                 ],
+                whatToExpect: `
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center"><span class="text-pink-500 mr-2">●</span> Choosing Your First Class</h3>
+                            <p>If you are completely new to Ashtanga Yoga, we recommend starting with a <strong>Beginners or Led class</strong>. In a Led class, the teacher guides the entire group through the sequence together, calling out each posture and breath count. This is the perfect way to learn the fundamental postures, the breathing rhythm (<em>ujjayi pranayama</em>), and the coordination between movement and breath — all in a supportive, guided environment. No prior experience is needed.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center"><span class="text-pink-500 mr-2">●</span> During the Class</h3>
+                            <p>An Ashtanga class follows a set sequence of postures. You will move through sun salutations, standing postures, seated postures, and a closing sequence. The teacher will guide and adjust you throughout. Because the practice synchronises deep, rhythmic breathing with continuous movement, the exercise is more intensive than many other yoga styles. This generates significant internal heat — the room temperature naturally rises several degrees, and your body will warm considerably. <strong>You will sweat</strong>, so bring a towel to keep your mat dry and comfortable. A water bottle is always welcome too.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center"><span class="text-pink-500 mr-2">●</span> Growing into Mysore Style</h3>
+                            <p>Once you have memorised the sequence and feel confident with the breath-movement coordination, you can transition to <strong>Mysore style</strong> — the traditional, self-paced format of Ashtanga. In a Mysore class, each student practises at their own pace while the teacher moves around the room offering individual adjustments and guidance. This is where the practice truly becomes your own. There is no pressure to "keep up" — you simply practise what you know, and the teacher will introduce new postures when you are ready.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center"><span class="text-pink-500 mr-2">●</span> After the Class</h3>
+                            <p>Most people leave an Ashtanga class feeling <strong>energised, calm, and deeply focused</strong>. The combination of physical effort and meditative breathing creates a unique sense of clarity that many describe as a "reset" for the mind and body. You may feel pleasantly tired but also surprisingly alert. It is common to feel a sense of accomplishment and inner peace that stays with you throughout the day.</p>
+                        </div>
+                        <div class="bg-pink-50 border border-pink-100 rounded-xl p-6 text-center">
+                            <p class="text-gray-700"><strong>Still have questions?</strong> Check out our <a href="#class-faq" class="text-pink-600 hover:text-pink-800 underline font-medium">FAQ section below</a> for practical tips, tricks, and answers to the most common questions about starting your Ashtanga practice.</p>
+                        </div>
+                    </div>
+                `,
                 socialProof: [
                     {
                         name: "Madonna",
