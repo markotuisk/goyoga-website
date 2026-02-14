@@ -104,9 +104,15 @@ function renderTeacherData(id, lang) {
         websiteEl.href = socials.website;
     } else if (websiteEl && socials.facebook && socials.facebook !== '#') {
         websiteEl.href = socials.facebook;
-        // Change icon to facebook
     } else if (websiteEl) {
         websiteEl.style.display = 'none';
+    }
+
+    const emailEl = document.getElementById('social-email');
+    if (emailEl && socials.email) {
+        emailEl.href = 'mailto:' + socials.email;
+    } else if (emailEl) {
+        emailEl.style.display = 'none';
     }
 
     // Testimonials Section
