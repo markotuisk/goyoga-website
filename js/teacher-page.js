@@ -91,8 +91,23 @@ function renderTeacherData(id, lang) {
         if (window.lucide) window.lucide.createIcons();
     }
 
-    // Update Socials (if elements exist)
-    // For now we use the placeholders in teacher.html, but we could update them dynamically
+    // Update Social Links
+    const instagramEl = document.getElementById('social-instagram');
+    if (instagramEl && socials.instagram && socials.instagram !== '#') {
+        instagramEl.href = socials.instagram;
+    } else if (instagramEl) {
+        instagramEl.style.display = 'none';
+    }
+
+    const websiteEl = document.getElementById('social-website');
+    if (websiteEl && socials.website && socials.website !== '#') {
+        websiteEl.href = socials.website;
+    } else if (websiteEl && socials.facebook && socials.facebook !== '#') {
+        websiteEl.href = socials.facebook;
+        // Change icon to facebook
+    } else if (websiteEl) {
+        websiteEl.style.display = 'none';
+    }
 
     // Testimonials Section
     const testimonialsSection = document.getElementById('teacher-testimonials-section');
